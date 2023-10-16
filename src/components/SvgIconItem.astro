@@ -6,3 +6,25 @@ const { image, title, color } = Astro.props;
     <img class="svg-icon" src={image} alt={title} />
     <h5 class={`py-4 ${color}`}>{title}</h5>
 </div>
+
+<style>
+    .svg-icon {
+        height: 12em;
+    }
+
+    .gray {
+        color: #768fab;
+    }
+
+    .blue {
+        color: #1487a1;
+    }
+
+    .purple {
+        color: #9645e4;
+    }
+
+    .brown {
+        color: #a29086;
+    }
+</style>
