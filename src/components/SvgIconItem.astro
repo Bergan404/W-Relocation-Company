@@ -1,0 +1,8 @@
+---
+const { image, title, color } = Astro.props;
+---
+
+<div class="col text-center">
+    <img class="svg-icon" src={image} alt={title} />
+    <h5 class={`py-4 ${color}`}>{title}</h5>
+</div>

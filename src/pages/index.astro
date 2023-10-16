@@ -1,8 +1,10 @@
 ---
+import SvgIconItem from "../components/SvgIconItem.astro";
+import Svgicons from "../components/Svgicons.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="W Relocation Company">
 	<section
 		id="homecover-1"
 		class="container-fluid py-5 full-bg"
@@ -38,38 +40,26 @@ import Layout from "../layouts/Layout.astro";
 		<div class="container">
 			<h3 class="text-center line-above">WHY W RELOCATION</h3>
 			<div class="row py-5 justify-content-between">
-				<div class="col text-center">
-					<img
-						class="svg-icon"
-						src="src/assets/images/computer.svg"
-						alt="Technology"
-					/>
-					<h5 class="py-4 gray">TECHNOLOGY.</h5>
-				</div>
-				<div class="col text-center">
-					<img
-						class="svg-icon"
-						src="src/assets/images/Hands.svg"
-						alt="Caring"
-					/>
-					<h5 class="py-4 purple">CARING.</h5>
-				</div>
-				<div class="col text-center">
-					<img
-						class="svg-icon"
-						src="src/assets/images/People.svg"
-						alt="Team"
-					/>
-					<h5 class="py-4 blue">TEAM.</h5>
-				</div>
-				<div class="col text-center">
-					<img
-						class="svg-icon"
-						src="src/assets/images/Wizard.svg"
-						alt="Full Service"
-					/>
-					<h5 class="py-4 brown">FULL-SERVICE.</h5>
-				</div>
+				<SvgIconItem
+					title="Technology."
+					image="../src/assets/images/computer.svg"
+					color="gray"
+				/>
+				<SvgIconItem
+					title="CARING."
+					image="../src/assets/images/Hands.svg"
+					color="purple"
+				/>
+				<SvgIconItem
+					title="TEAM."
+					image="../src/assets/images/People.svg"
+					color="blue"
+				/>
+				<SvgIconItem
+					title="FULL-SERVICE."
+					image="../src/assets/images/Wizard.svg"
+					color="brown"
+				/>
 			</div>
 		</div>
 	</section>
