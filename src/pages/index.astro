@@ -1,4 +1,6 @@
 ---
+import Partners from "../components/Partners.astro";
+import Services from "../components/Services.astro";
 import SvgIconItem from "../components/SvgIconItem.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -12,10 +14,7 @@ import Layout from "../layouts/Layout.astro";
 		<div class="container grid-center h-100">
 			<div class="row justify-content-between gap-5 p-relative z-5">
 				<div class="col-4">
-					<img
-						src="src/assets/images/W-Relocation.svg"
-						alt="LOGO"
-					/>
+					<img src="src/assets/images/W-Relocation.svg" alt="LOGO" />
 				</div>
 				<div
 					class="col white-txt d-flex flex-column justify-content-around"
@@ -35,6 +34,7 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 
+	<!-- Why W Relocations -->
 	<section class="container-fluid py-6">
 		<div class="container">
 			<h3 class="text-center line-above">WHY W RELOCATION</h3>
@@ -63,6 +63,7 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 
+	<!-- Discover W Relocations -->
 	<section class="container-fluid py-6 gray-bg px-0">
 		<div class="row align-items-center">
 			<div class="col">
@@ -93,30 +94,41 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 
+	<!-- Partners -->
 	<section class="container-fluid py-6">
 		<div class="container">
-			<h3 class="text-center line-above">PARTNERS</h3>
+			<h3 class="text-center">PARTNERS</h3>
 			<div class="row py-5 justify-content-between">
-				<SvgIconItem
-					title="Technology."
+				<Partners
+					title="Bank Bank"
 					image="../src/assets/images/computer.svg"
-					color="gray"
 				/>
-				<SvgIconItem
-					title="CARING."
-					image="../src/assets/images/Hands.svg"
-					color="purple"
+				<Partners
+					title="Digital Solutions"
+					image="../src/assets/images/computer.svg"
 				/>
-				<SvgIconItem
-					title="TEAM."
-					image="../src/assets/images/People.svg"
-					color="blue"
+				<Partners
+					title="Perlanton Inc"
+					image="../src/assets/images/computer.svg"
 				/>
-				<SvgIconItem
-					title="FULL-SERVICE."
-					image="../src/assets/images/Wizard.svg"
-					color="brown"
-				/>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Services -->
+	<section class="container-fluid py-6 gray-bg px-0">
+		<div class="row align-items-center">
+			<div class="col white-txt px-5">
+				<h3><em>OUR SERVICES</em></h3>
+				<div>
+					<img
+						src="src/assets/images/boxes.webp"
+						alt="boxes"
+					/>
+				</div>
+			</div>
+			<div class="col">
+				<Services />
 			</div>
 		</div>
 	</section>

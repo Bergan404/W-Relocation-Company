@@ -1,0 +1,19 @@
+---
+const { image, title } = Astro.props;
+---
+
+<div class="col text-center">
+    <img class="svg-icon" src={image} alt={title} />
+    <h5 class="py-3 my-3">{title}</h5>
+</div>
+
+<style>
+    .svg-icon {
+        height: 12em;
+    }
+
+    h5 {
+        background-color: #768FAB;
+        color: white;
+    }
+</style>
