@@ -2,12 +2,22 @@
 const { number, title, description } = Astro.props;
 ---
 
-<div class="row">
+<div class="row gap-2">
     <div class="col-1">
-        <h2>{number}</h2>
+        <h3 class="number">{number}</h3>
     </div>
     <div class="col">
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{description}</p>
     </div>
 </div>
+
+<style>
+    .number {
+        color: #9b9b9b;
+    }
+    h3,
+    p {
+        color: white;
+    }
+</style>

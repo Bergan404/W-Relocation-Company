@@ -118,19 +118,27 @@ import Layout from "../layouts/Layout.astro";
 	<!-- Our Services -->
 	<section class="container-fluid py-6 gray-bg px-0">
 		<div class="row align-items-center">
-			<div class="col white-txt px-5">
+			<div class="col white-txt px-5 text-center">
 				<h3><em>OUR SERVICES</em></h3>
-				<div>
+				<div class="col-10 m-auto">
 					<img
 						src="src/assets/images/boxes.webp"
 						alt="boxes"
 					/>
 				</div>
 			</div>
-			<div class="col">
-				<Services number="01" title="In-House Realtors" description="Your agent is prepared to do virtual showings, arrange remote closings with title partners, and be sensitive to your unique schedule and needs when relocating, locally or globally. " />
+			<div class="col row flex-column justify-content-between gap-5">
+				<Services number="01" title="In-House Realtors" description="Your agent is prepared to do virtual showings, arrange remote closings with title partners, and be sensitive to your unique schedule and needs when relocating, locally or globally." />
+				<Services number="02" title="Relocation Offers" description="Employer-provided benefits like cash-back rebate programs, preferred Real Estate Agents, Lenders, and Title Companies offering you significant incentives." />
+				<Services number="03" title="Full-Service" description="Feel confident about every aspect of the Real Estate portion of your move from Real Estate, Mortgages, and Title Services." />
+
 			</div>
 		</div>
+	</section>
+
+	<!-- Cash Back program -->
+	<section>
+		
 	</section>
 </Layout>
 
