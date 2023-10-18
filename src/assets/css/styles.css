@@ -1201,6 +1201,10 @@ img.full-width-img {
     place-content: center
 }
 
+.bigger-text {
+    font-size: 5em;
+}
+
 .discover-btn {
     border: none;
     color: white;
@@ -1215,6 +1219,22 @@ img.full-width-img {
 .discover-btn:hover {
     background-color: white;
     color: gray
+}
+
+.discover-btn-negative {
+    border: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.61);
+    font-size: 1.5em;
+    padding: .2em 1em;
+    -webkit-transition: .2s all ease-in-out;
+    transition: .2s all ease-in-out
+}
+
+.discover-btn-negative:hover {
+    background-color: rgb(59, 59, 59);
+    color: white;
 }
 
 .line-above {

@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 
+
 var resizeCover = function() {
 	var homeCover = document.getElementById( 'homecover-1' );
 	var newHeight = document.documentElement.clientHeight -
@@ -10,3 +11,5 @@ var resizeCover = function() {
 
 document.addEventListener( 'DOMContentLoaded', resizeCover );
 window.addEventListener( 'resize', resizeCover );
+
+
