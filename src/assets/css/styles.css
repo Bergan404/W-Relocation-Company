@@ -919,7 +919,8 @@
 html {
     overflow-x: hidden;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -1067,6 +1068,15 @@ img.full-width-img {
     background-color: rgba(0, 0, 0, 0.5)
 }
 
+.overlay-darker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.7)
+}
 @media (max-width: 768px) {
     .d-desktop-none {
         display: none
@@ -1129,6 +1139,10 @@ img.full-width-img {
     width: 0%;
     -webkit-transition: all 1000ms ease-out;
     transition: all 1000ms ease-out
+}
+
+.vh-90 {
+    height: 90vh;
 }
 
 .white-bg {
@@ -1569,74 +1583,4 @@ header.scroll-down {
 
 .sticky-donate .donate-buttons .donate p {
     color: white
-}
-
-.gform_wrapper input[type=text],
-.gform_wrapper input[type=email],
-.gform_wrapper input[type=tel] {
-    background-color: #fff;
-    color: #4682b4;
-    border: 2px solid black;
-    padding: 10px 15px !important
-}
-
-.gform_wrapper input[type=text]::-webkit-input-placeholder,
-.gform_wrapper input[type=email]::-webkit-input-placeholder,
-.gform_wrapper input[type=tel]::-webkit-input-placeholder {
-    color: black
-}
-
-.gform_wrapper input[type=text]::-moz-placeholder,
-.gform_wrapper input[type=email]::-moz-placeholder,
-.gform_wrapper input[type=tel]::-moz-placeholder {
-    color: black
-}
-
-.gform_wrapper input[type=text]:-ms-input-placeholder,
-.gform_wrapper input[type=email]:-ms-input-placeholder,
-.gform_wrapper input[type=tel]:-ms-input-placeholder {
-    color: black
-}
-
-.gform_wrapper input[type=text]::-ms-input-placeholder,
-.gform_wrapper input[type=email]::-ms-input-placeholder,
-.gform_wrapper input[type=tel]::-ms-input-placeholder {
-    color: black
-}
-
-.gform_wrapper input[type=text]::placeholder,
-.gform_wrapper input[type=email]::placeholder,
-.gform_wrapper input[type=tel]::placeholder {
-    color: black
-}
-
-.gform_wrapper input[type=submit] {
-    padding: 1rem 5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: .8rem;
-    width: 100%;
-    background-color: crimson;
-    color: #eee;
-    border-radius: 99px;
-    cursor: pointer;
-    border: none;
-    -webkit-transition: all 350ms ease-in-out;
-    transition: all 350ms ease-in-out;
-    letter-spacing: 3px;
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
-}
-
-.gform_wrapper input[type=submit]:hover {
-    background-color: #eee;
-    color: crimson
-}
-
-@media (min-width: 768px) {
-    .gform_wrapper input[type=submit] {
-        width: auto
-    }
 }

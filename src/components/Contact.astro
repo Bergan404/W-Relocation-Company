@@ -1,0 +1,51 @@
+---
+const {
+    addressName,
+    addressStreet,
+    addressCity,
+    phone,
+    email,
+    instagram,
+    tiktok,
+} = Astro.props;
+---
+
+<!-- Address -->
+<p class="address">{addressName}</p>
+<p class="address">{addressStreet}</p>
+<p class="address">{addressCity}</p>
+<hr />
+<p>Tel: {phone}</p>
+<p>Email: {email}</p>
+<div class="row  text-center">
+    <div class="col-2">
+        <a href={instagram}>
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <div class="col-2">
+        <a href={tiktok}>
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+    p {
+        font-size: 1.2em !important;
+    }
+
+    .address {
+        margin-bottom: 0em;
+    }
+
+    i {
+        color: white;
+        font-size: 2em;
+        transition: all 0.2s ease-in-out;
+    }
+
+    i:hover {
+        color: rgb(45, 45, 45);
+    }
+</style>

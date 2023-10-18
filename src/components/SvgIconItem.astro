@@ -1,8 +1,8 @@
 ---
-const { image, title, color } = Astro.props;
+const { image, title, color, duration } = Astro.props;
 ---
 
-<div class="col text-center">
+<div class="col text-center" data-aos="fade-right" data-aos-duration={duration}>
     <img class="svg-icon" src={image} alt={title} />
     <h5 class={`py-4 ${color}`}>{title}</h5>
 </div>
