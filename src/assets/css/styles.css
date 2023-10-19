@@ -218,6 +218,11 @@
     padding-bottom: 5rem
 }
 
+.py-9 {
+    padding-top: 7rem;
+    padding-bottom: 7rem
+}
+
 .center-el {
     margin: auto
 }
@@ -959,7 +964,8 @@ h1 {
 h2 {
     font-size: 1.8rem;
     font-family: 'Playfair Display', serif;
-    font-weight: 200
+    font-weight: 200;
+    line-height: 1.2em;
 }
 
 h2.lg {
@@ -983,18 +989,19 @@ h2.lg {
 }
 
 h3 {
-    font-size: 3rem
+    font-size: 3rem;
+    line-height: 1.2em;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Playfair Display', serif;
     font-weight: 200
 }
 
 @media (min-width: 768px) {
     h4 {
-        font-size: 1.5rem
+        font-size: 2rem
     }
 }
 
@@ -1257,7 +1264,8 @@ img.full-width-img {
 }
 
 .discover-text p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: 300;
 }
 
 .line-above {
@@ -1295,7 +1303,8 @@ header.scroll-down {
 .navigation-menu .menu .menu-item a {
     color: white;
     text-decoration: none;
-    text-transform: capitalize
+    text-transform: capitalize;
+    font-weight: 600;
 }
 
 .mobile-nav {
@@ -1345,11 +1354,12 @@ header.scroll-down {
 }
 
 .navbar-logo p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: white;
     margin-bottom: 0em;
-    text-transform: uppercase
+    text-transform: uppercase;
+    line-height: 20px;
 }
 
 .burger-overlay {
@@ -1644,3 +1654,17 @@ header.scroll-down {
         text-align: center;
     }
 }
+
+.absolute-off {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+br {
+    padding: 1em;
+}
+
+.big-line-height {
+    line-height: 1.5em;
+ }
