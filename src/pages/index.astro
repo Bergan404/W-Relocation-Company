@@ -76,8 +76,10 @@ import Layout from "../layouts/Layout.astro";
 	</section>
 
 	<!-- Discover W Relocations -->
-	<section class="container-fluid py-6 gray-bg px-0 vh-90 d-flex align-items-center">
-		<div class="row align-items-center">
+	<section
+		class="container-fluid py-6 gray-bg px-0 vh-90 d-flex align-items-center"
+	>
+		<div class="row mobile-column mobile-padding">
 			<div class="col">
 				<img
 					src="src/assets/images/discover-image.webp"
@@ -86,21 +88,24 @@ import Layout from "../layouts/Layout.astro";
 					data-aos-duration="1000"
 				/>
 			</div>
-			<div class="col white-txt px-5">
+			<div class="col white-txt px-5 d-flex flex-column justify-content-between">
 				<h3><em>DISCOVER W RELOCATION</em></h3>
-				<p>
-					W Relocation specializes in offering benefits and
-					personalized discounts for your members/employees. We ensure
-					that these benefits are customized to fit every person's
-					needs, from Real Estate, Mortgages, and Title Services,
-					making sure these big life events are an enjoyable
-					experience.
-				</p>
-				<p>
-					Our program was designed to allow you to offer valuable and
-					impactful benefits and discounts to your employees, which
-					leads to high morale, retention, and appeal to new talent.
-				</p>
+				<div class="discover-text">
+					<p>
+						W Relocation specializes in offering benefits and
+						personalized discounts for your members/employees. We
+						ensure that these benefits are customized to fit every
+						person's needs, from Real Estate, Mortgages, and Title
+						Services, making sure these big life events are an
+						enjoyable experience.
+					</p>
+					<p>
+						Our program was designed to allow you to offer valuable
+						and impactful benefits and discounts to your employees,
+						which leads to high morale, retention, and appeal to new
+						talent.
+					</p>
+				</div>
 				<a href="/">
 					<button class="discover-btn">Learn More</button>
 				</a>
@@ -130,7 +135,7 @@ import Layout from "../layouts/Layout.astro";
 	</section> -->
 
 	<!-- Cash Back program -->
-	<section class="py-6 container ">
+	<section class="py-6 container">
 		<div class="row">
 			<div class="col grid-center">
 				<h1 class="py-6 bigger-text">CASH BACK REBATE PROGRAM</h1>
@@ -149,7 +154,7 @@ import Layout from "../layouts/Layout.astro";
 
 	<!-- Our Services -->
 	<section class="container-fluid py-6 gray-bg px-0">
-		<div class="row align-items-center">
+		<div class="row align-items-center mobile-column mobile-padding">
 			<div class="col white-txt px-5 text-center">
 				<h3><em>OUR SERVICES</em></h3>
 				<div class="col-10 m-auto">
@@ -180,8 +185,6 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</div>
 	</section>
-
-
 
 	<!-- Contact Section -->
 	<section

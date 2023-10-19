@@ -1042,6 +1042,10 @@ img.full-width-img {
     z-index: 5
 }
 
+.z-100 {
+    z-index: 100
+}
+
 .hero {
     position: relative;
     min-height: 50vh
@@ -1240,7 +1244,7 @@ img.full-width-img {
     border: none;
     color: white;
     border-radius: 20px;
-    background-color: rgba(128, 128, 128, 0.61);
+    background-color: #383838;
     font-size: 1.5em;
     padding: .2em 1em;
     -webkit-transition: .2s all ease-in-out;
@@ -1248,8 +1252,12 @@ img.full-width-img {
 }
 
 .discover-btn-negative:hover {
-    background-color: rgb(59, 59, 59);
+    background-color: rgba(128, 128, 128, 0.61);
     color: white;
+}
+
+.discover-text p {
+    font-size: 1.2em;
 }
 
 .line-above {
@@ -1291,7 +1299,7 @@ header.scroll-down {
 }
 
 .mobile-nav {
-    background-color: blue;
+    background-color: #383838;
     position: fixed;
     z-index: 99;
     top: 0;
@@ -1592,5 +1600,19 @@ header.scroll-down {
 @media (max-width: 992px) {
     .sticky-donate .donate-buttons .supoort {
         display: none
+    }
+
+    .mobile-column {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .mobile-padding {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .vh-90 {
+        height: auto;
     }
 }
