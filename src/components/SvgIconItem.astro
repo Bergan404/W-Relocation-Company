@@ -4,7 +4,7 @@ const { image, title, color, duration } = Astro.props;
 
 <div class="col text-center" data-aos="fade-right" data-aos-duration={duration}>
     <img class="svg-icon" src={image} alt={title} />
-    <h5 class={`py-4 ${color}`}>{title}</h5>
+    <h5 class={`py-4 text-uppercase ${color}`}>{title}</h5>
 </div>
 
 <style>
@@ -26,5 +26,12 @@ const { image, title, color, duration } = Astro.props;
 
     .brown {
         color: #a29086;
+    }
+
+    @media (min-width: 1500px) {
+
+        .svg-icon {
+            height: 20em;
+        }
     }
 </style>

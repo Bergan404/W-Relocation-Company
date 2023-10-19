@@ -921,6 +921,10 @@
     max-width: 1200px
 }
 
+.container-large {
+    max-width: 1300px
+}
+
 html {
     overflow-x: hidden;
     -webkit-box-sizing: border-box;
@@ -969,44 +973,51 @@ h2 {
 }
 
 h2.lg {
-    font-size: 2.5rem
+    /* font-size: 2.5rem */
+    font-size: 2.5vw
 }
 
 @media (min-width: 768px) {
     h2 {
-        font-size: 3rem
+        /* font-size: 3rem */
+        font-size: 3vw
     }
 }
 
 @media (min-width: 992px) {
     h2 {
-        font-size: 4rem
+        /* font-size: 4rem */
+        font-size: 4vw
     }
 
     h2.lg {
-        font-size: 6rem
+        /* font-size: 6rem */
+        font-size: 6vw
     }
 }
 
 h3 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: 3vw;
     line-height: 1.2em;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: 'Playfair Display', serif;
     font-weight: 200
 }
 
 @media (min-width: 768px) {
     h4 {
-        font-size: 2rem
+        /* font-size: 2rem */
+        font-size: 2vw
     }
 }
 
 h5 {
-    font-size: 1.5rem
+    /* font-size: 1.5rem */
+    font-size: 1.5vw
 }
 
 h6 {
@@ -1236,7 +1247,8 @@ img.full-width-img {
     color: white;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.61);
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
+    font-size: 1.5vw;
     padding: .2em 1em;
     -webkit-transition: .2s all ease-in-out;
     transition: .2s all ease-in-out
@@ -1264,7 +1276,8 @@ img.full-width-img {
 }
 
 .discover-text p {
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
+    font-size: 1.3vw;
     font-weight: 300;
 }
 
@@ -1305,6 +1318,7 @@ header.scroll-down {
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 600;
+    font-size: 1vw;
 }
 
 .mobile-nav {
@@ -1354,12 +1368,13 @@ header.scroll-down {
 }
 
 .navbar-logo p {
-    font-size: 1em;
+    /* font-size: 1em; */
+    font-size: 1vw;
     font-weight: bold;
     color: white;
     margin-bottom: 0em;
     text-transform: uppercase;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 
 .burger-overlay {
@@ -1667,4 +1682,22 @@ br {
 
 .big-line-height {
     line-height: 1.5em;
- }
+}
+
+.sort-of-bigger-text {
+    /* font-size: 4em; */
+    font-size: 4vw;
+}
+
+
+@media (min-width: 1500px) {
+    .mobile-column {
+        align-items: center;
+    }
+
+    .container-large {
+        max-width: unset;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
