@@ -935,7 +935,8 @@ html {
 body {
     font-family: sans-serif;
     margin: 0px;
-    padding: 0px
+    padding: 0px;
+    overflow: hidden;
 }
 
 body.no-scroll {
@@ -979,15 +980,13 @@ h2.lg {
 
 @media (min-width: 768px) {
     h2 {
-        /* font-size: 3rem */
-        font-size: 3vw
+        font-size: 3rem
     }
 }
 
 @media (min-width: 992px) {
     h2 {
-        /* font-size: 4rem */
-        font-size: 4vw
+        font-size: 4rem
     }
 
     h2.lg {
@@ -1003,21 +1002,19 @@ h3 {
 }
 
 h4 {
-    font-size: 2vw;
+    font-size: 2em;
     font-family: 'Playfair Display', serif;
     font-weight: 200
 }
 
 @media (min-width: 768px) {
     h4 {
-        /* font-size: 2rem */
-        font-size: 2vw
+        font-size: 2rem
     }
 }
 
 h5 {
-    /* font-size: 1.5rem */
-    font-size: 1.5vw
+    font-size: 1.5rem
 }
 
 h6 {
@@ -1277,8 +1274,9 @@ img.full-width-img {
 
 .discover-text p {
     /* font-size: 1.3em; */
-    font-size: 1.3vw;
+    font-size: 1.3em;
     font-weight: 300;
+    line-height: 1.3em;
 }
 
 .line-above {
@@ -1318,7 +1316,7 @@ header.scroll-down {
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1em;
 }
 
 .mobile-nav {
@@ -1368,8 +1366,7 @@ header.scroll-down {
 }
 
 .navbar-logo p {
-    /* font-size: 1em; */
-    font-size: 1vw;
+    font-size: 1em;
     font-weight: bold;
     color: white;
     margin-bottom: 0em;
@@ -1668,6 +1665,26 @@ header.scroll-down {
         align-items: center;
         text-align: center;
     }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .col-7 {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .col-4 {
+        width: 50%;
+    }
+
+    .column-on-mobile {
+        flex-direction: column;
+    }
 }
 
 .absolute-off {
@@ -1699,5 +1716,88 @@ br {
         max-width: unset;
         padding-left: 5em;
         padding-right: 5em;
+    }
+
+    .justify-content-between {
+        justify-content: unset;
+    }
+
+    .navigation-menu .menu .menu-item a {
+        font-size: 1vw;
+    }
+
+    .discover-text p {
+        font-size: 1.3vw;
+    }
+
+    .navbar-logo p {
+        font-size: 1vw;
+    }
+
+    h2 {
+        font-size: 4vw
+    }
+
+    h4 {
+        font-size: 2vw
+    }
+
+    h5 {
+        font-size: 1.5vw
+    }
+}
+
+
+@media (max-width: 576px) {
+    .col-4 {
+        width: 70%;
+    }
+
+    .sort-of-bigger-text {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .py-9 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .px-5 {
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+    }
+
+    .discover-text p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+
+    .big-line-height {
+        line-height: 1em;
+    }
+
+    .bigger-text {
+        font-size: 2em;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-10 {
+        width: 100%;
+    }
+    .col-1 {
+        width: 100%;
+    }
+    p {
+        text-align: center;
     }
 }

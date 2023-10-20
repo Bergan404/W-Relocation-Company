@@ -35,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
 							>best.</em
 						>
 					</h2>
-					<a href="/">
+					<a href="#discover">
 						<button class="discover-btn"
 							>Discover W Relocation</button
 						>
@@ -54,7 +54,7 @@ import Layout from "../layouts/Layout.astro";
 			<h3 class="text-center line-above sort-of-bigger-text">
 				WHY W RELOCATION
 			</h3>
-			<div class="row py-9 justify-content-between">
+			<div class="row py-9 justify-content-between column-on-mobile">
 				<SvgIconItem
 					title="Technology."
 					image="/images/computer.svg"
@@ -86,6 +86,7 @@ import Layout from "../layouts/Layout.astro";
 	<!-- Discover W Relocations -->
 	<section
 		class="container-fluid py-9 gray-bg px-0 d-flex align-items-center"
+		id="discover"
 	>
 		<div class="row mobile-column mobile-padding h-100">
 			<div class="col p-relative">
@@ -98,7 +99,7 @@ import Layout from "../layouts/Layout.astro";
 				/>
 			</div>
 			<div
-				class="col white-txt px-5 d-flex flex-column"
+				class="col white-txt px-5 d-flex flex-column justify-content-between"
 			>
 				<h3><em>DISCOVER <br /> W RELOCATION</em></h3>
 				<div class="discover-text">
@@ -117,7 +118,7 @@ import Layout from "../layouts/Layout.astro";
 						talent.
 					</p>
 				</div>
-				<a href="/">
+				<a href="#programs" class="mobile-center">
 					<button class="discover-btn">Learn More</button>
 				</a>
 			</div>
@@ -146,8 +147,8 @@ import Layout from "../layouts/Layout.astro";
 	</section> -->
 
 	<!-- Cash Back program -->
-	<section class="py-4 container">
-		<div class="row mobile-column mobile-padding align-items-center">
+	<section class="py-4 container" id="programs">
+		<div class="row mobile-column align-items-center">
 			<div class="col grid-center">
 				<h1 class="py-4 bigger-text big-line-height">
 					CASH BACK REBATE PROGRAM
@@ -166,7 +167,7 @@ import Layout from "../layouts/Layout.astro";
 	</section>
 
 	<!-- Our Services -->
-	<section class="container-fluid py-6 gray-bg px-0">
+	<section class="container-fluid py-6 gray-bg px-0" id="services">
 		<div class="row align-items-center mobile-column mobile-padding">
 			<div class="col white-txt px-5 text-center">
 				<h3><em>OUR SERVICES</em></h3>
@@ -203,6 +204,7 @@ import Layout from "../layouts/Layout.astro";
 	<section
 		class="container-fluid py-5 full-bg vh-90 p-relative"
 		style="background-image: url(/images/contact-us-section.webp);"
+		id="contact"
 	>
 		<div class="container d-flex h-100">
 			<div class="row gap-5 p-relative z-5 align-items-center w-100">
@@ -212,12 +214,11 @@ import Layout from "../layouts/Layout.astro";
 				<div class="col white-txt">
 					<Contact
 						addressName="Main Office"
-						addressStreet="123 Anywhere St."
-						addressCity="Any City, ST 12345"
-						phone="(123) 456-7890"
-						email="Test@test.com"
+						addressStreet="777 S Federal Hwy"
+						addressCity="Fort Lauderdale, FL 33316"
+						phone="954.649.7444"
+						email="GWhiddon@wrelocation.com"
 						instagram="test.com"
-						tiktok="test.com"
 					/>
 				</div>
 			</div>

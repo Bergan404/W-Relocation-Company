@@ -1,13 +1,6 @@
 ---
-const {
-    addressName,
-    addressStreet,
-    addressCity,
-    phone,
-    email,
-    instagram,
-    tiktok,
-} = Astro.props;
+const { addressName, addressStreet, addressCity, phone, email, instagram } =
+    Astro.props;
 ---
 
 <!-- Address -->
@@ -17,15 +10,10 @@ const {
 <hr />
 <p>Tel: {phone}</p>
 <p>Email: {email}</p>
-<div class="row  text-center">
+<div class="row text-center mobile-center">
     <div class="col-2">
         <a href={instagram}>
             <i class="fa-brands fa-instagram"></i>
-        </a>
-    </div>
-    <div class="col-2">
-        <a href={tiktok}>
-            <i class="fa-brands fa-tiktok"></i>
         </a>
     </div>
 </div>
@@ -47,5 +35,10 @@ const {
 
     i:hover {
         color: rgb(45, 45, 45);
+    }
+    @media (max-width: 576px) {
+        .mobile-center {
+            justify-content: center;
+        }
     }
 </style>
