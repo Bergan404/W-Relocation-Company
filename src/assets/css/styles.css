@@ -1706,6 +1706,10 @@ br {
     font-size: 4vw;
 }
 
+.text-left {
+    text-align: left;
+}
+
 
 @media (min-width: 1500px) {
     .mobile-column {
@@ -1758,7 +1762,11 @@ br {
     }
 
     h3 {
-        font-size: 2em;
+        font-size: 2em !important;
+        text-align: center;
+    }
+
+    .text-left {
         text-align: center;
     }
 
@@ -1788,15 +1796,19 @@ br {
     .bigger-text {
         font-size: 2em;
     }
+
     .col-6 {
         width: 100%;
     }
+
     .col-10 {
         width: 100%;
     }
+
     .col-1 {
         width: 100%;
     }
+
     p {
         text-align: center;
     }
