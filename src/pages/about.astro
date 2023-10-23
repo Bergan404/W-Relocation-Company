@@ -1,0 +1,110 @@
+---
+import Contact from "../components/Contact.astro";
+import Partners from "../components/Partners.astro";
+import Services from "../components/Services.astro";
+import SvgIconItem from "../components/SvgIconItem.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="W Relocation Company">
+    <!-- About -->
+    <section class="container-fluid py-6 gray-bg" id="services">
+        <div
+            class="container-large m-auto row align-items-center mobile-column mobile-padding"
+        >
+            <div class="col white-txt">
+                <h3>Elevating Your <br /> Relocation Experience</h3>
+                <hr />
+                <p>
+                    Our focus is on providing customized benefits, personalized
+                    discounts, and a comprehensive suite of services for those
+                    buying or selling homes.
+                </p>
+
+                <p>
+                    From Real Estate and Mortgages to Title Services and more,
+                    we ensure that every aspect of this significant life event
+                    is a positive and seamless experience, all while offering
+                    the most competitive rates.
+                </p>
+
+                <p>
+                    With our program, your employees and members can enjoy
+                    cash-back at closing and exclusive discounts on Mortgage and
+                    Title services, making their relocation journey both
+                    financially rewarding and stress-free.
+                </p>
+
+                <p>
+                    We've established partnerships with over 1,000 top-rated
+                    brokerages nationwide. This guarantees that anyone referred
+                    through our network is paired with a highly qualified Real
+                    Estate agent who meets stringent criteria, ensuring a smooth
+                    and successful relocation.
+                </p>
+                <hr />
+                <a href="">
+                    <button>Contact us today</button>
+                </a>
+            </div>
+
+            <div class="col white-txt px-5 text-center">
+                <div class="col-10 m-auto">
+                    <img
+                        src="/images/people.webp"
+                        alt="people"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- People -->
+    <section
+        class="container-fluid py-5 full-bg vh-90 p-relative"
+        style="background-image: url(/images/Meet-Team-Background.webp);"
+        id="contact"
+    >
+        <div class="container d-flex h-100">
+            <div class="row gap-5 p-relative z-5 align-items-center w-100">
+                <div class="col">
+                    <h1 class="white-txt bigger-text">Contact</h1>
+                </div>
+                <div class="col white-txt">
+                    <Contact
+                        addressName="Main Office"
+                        addressStreet="777 S Federal Hwy"
+                        addressCity="Fort Lauderdale, FL 33316"
+                        phone="954.649.7444"
+                        email="GWhiddon@wrelocation.com"
+                        instagram="test.com"
+                    />
+                </div>
+            </div>
+            <div class="overlay-darker"></div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    hr {
+        border: 1px solid white;
+        opacity: 1;
+    }
+    button {
+        background-color: #231F20;
+        color: white;
+        border: none;
+        padding: .7em 1.5em;
+        text-transform: uppercase;
+        font-weight: 200;
+        transition: .2s all ease-in-out;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #231F20;
+    }
+</style>
