@@ -171,7 +171,7 @@ import Layout from "../layouts/Layout.astro";
 		<div class="row align-items-center mobile-column mobile-padding">
 			<div class="col white-txt px-5 text-center">
 				<div class="col-10 m-auto">
-					<h3 class="text-left"><em>OUR <br> SERVICES</em></h3>
+					<h3 class="text-left"><em>OUR <br /> SERVICES</em></h3>
 				</div>
 				<div class="col-10 m-auto">
 					<img
@@ -210,8 +210,91 @@ import Layout from "../layouts/Layout.astro";
 	>
 		<div class="container d-flex h-100">
 			<div class="row gap-5 p-relative z-5 align-items-center w-100">
-				<div class="col">
+				<div class="col text-center">
 					<h1 class="white-txt bigger-text">Contact</h1>
+					<div class="py-3">
+						<button
+							type="button"
+							class="btn-contact"
+							data-bs-toggle="modal"
+							data-bs-target="#form">Contact us today</button
+						>
+						<!-- MODAL -->
+						<div
+							class="modal fade"
+							id="form"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered"
+								role="document"
+							>
+								<div class="modal-content">
+									<div class="modal-header border-bottom-0">
+										<h5
+											class="modal-title white-txt"
+											id="exampleModalLabel"
+										>
+											Contact Us Today
+										</h5>
+										<button
+											type="button"
+											class="close btn-contact"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true"
+												>&times;</span
+											>
+										</button>
+									</div>
+									<form>
+										<div class="modal-body">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													id="name1"
+													aria-describedby="fullnameHelp"
+													placeholder="Full Name"
+												/>
+											</div>
+											<div class="form-group">
+												<input
+													type="email"
+													class="form-control"
+													id="email1"
+													aria-describedby="emailHelp"
+													placeholder="Email Address"
+												/>
+											</div>
+											<div class="form-group">
+												<textarea
+													rows="4"
+													cols="50"
+													class="form-control"
+													id="textarea"
+													placeholder="Message"
+												></textarea>
+											</div>
+										</div>
+										<div
+											class="modal-footer border-top-0 d-flex justify-content-center"
+										>
+											<button
+												type="submit"
+												class="btn-success btn-contact"
+												>Submit</button
+											>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col white-txt">
 					<Contact
@@ -227,49 +310,80 @@ import Layout from "../layouts/Layout.astro";
 			<div class="overlay-darker"></div>
 		</div>
 	</section>
-</Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+	<style>
+		main {
+			margin: auto;
+			padding: 1.5rem;
+			max-width: 60ch;
+		}
+		h1 {
+			font-size: 3rem;
+			font-weight: 800;
+			margin: 0;
+		}
+
+		.btn-contact {
+			background-color: #231f20;
+			color: white;
+			border: none;
+			padding: 0.7em 1.5em;
+			text-transform: uppercase;
+			font-weight: 200;
+			transition: 0.2s all ease-in-out;
+		}
+
+		.btn-contact:hover {
+			background-color: white;
+			color: #231f20;
+		}
+		.modal-content {
+			background-color: #383838;
+		}
+		.close {
+			border-radius: 50px;
+			width: 50px;
+			height: 50px;
+			display: grid;
+			place-content: center;
+		}
+		.form-group {
+			padding: 0.5em 0em;
+		}
+		.modal-backdrop {
+			z-index: 5 !important;
+		}
+		.text-gradient {
+			background-image: var(--accent-gradient);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-size: 400%;
+			background-position: 0%;
+		}
+		.instructions {
+			line-height: 1.6;
+			margin: 1rem 0;
+			border: 1px solid rgba(var(--accent), 25%);
+			background-color: white;
+			padding: 1rem;
+			border-radius: 0.4rem;
+		}
+		.instructions code {
+			font-size: 0.875em;
+			font-weight: bold;
+			background: rgba(var(--accent), 12%);
+			color: rgb(var(--accent));
+			border-radius: 4px;
+			padding: 0.3em 0.45em;
+		}
+		.instructions strong {
+			color: rgb(var(--accent));
+		}
+		.link-card-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+			gap: 1rem;
+			padding: 0;
+		}
+	</style>
+</Layout>
