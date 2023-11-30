@@ -1239,6 +1239,12 @@ img.full-width-img {
     font-size: 5em !important;
 }
 
+.bigger-text-big {
+    font-size: 6em !important;
+    line-height: 1em !important;
+    color: #383838;
+}
+
 .discover-btn {
     border: none;
     color: white;

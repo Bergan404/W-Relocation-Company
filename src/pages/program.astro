@@ -1,0 +1,255 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="W Relocation Company">
+    <!-- program -->
+    <section class="container-fluid py-6 gray-bg" id="services">
+        <div
+            class="container-large m-auto row align-items-center mobile-column mobile-padding"
+        >
+            <div class="col white-txt">
+                <h3 class="title">
+                    What is the W Relocation Real Estate Cash Program?
+                </h3>
+                <hr />
+                <p>
+                    The Real Estate Cash Program allows W Relocation to offer
+                    your employees/members cash back on every Real Estate
+                    transaction they make while also ensuring that they work
+                    with the best agent in our network with years of experience
+                    and local market expertise.
+                </p>
+
+                <p>
+                    As an employer, you won't bear any financial responsibility
+                    for furnishing Cash Back to your employees; that
+                    responsibility falls squarely on us. Our behind-the-scenes
+                    processing ensures a seamless experience, with no extra
+                    paperwork or tasks for your HR Department.
+                </p>
+
+                <p>
+                    In addition, W Relocation will make a monetary donation to
+                    an entity of your choice for every transaction closed
+                    through The Real Estate Cash Program!
+                </p>
+
+                <p>
+                    Our goal is to continue providing first-class service and
+                    financial assistance programs and resources to aid in your
+                    corporate growth and retention while also leading your
+                    employees to their dream Real Estate portfolio.
+                </p>
+                <hr />
+                <button
+                    type="button"
+                    class="btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#form">Contact us today</button
+                >
+
+                <!-- MODAL -->
+                <div
+                    class="modal fade"
+                    id="form"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Contact Us Today
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="name1"
+                                            aria-describedby="fullnameHelp"
+                                            placeholder="Full Name"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email1"
+                                            aria-describedby="emailHelp"
+                                            placeholder="Email Address"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea
+                                            rows="4"
+                                            cols="50"
+                                            class="form-control"
+                                            id="textarea"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div
+                                    class="modal-footer border-top-0 d-flex justify-content-center"
+                                >
+                                    <button type="submit" class="btn-success"
+                                        >Submit</button
+                                    >
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col white-txt px-5 text-center">
+                <div class="col-10 m-auto">
+                    <img
+                        src="/images/program.png"
+                        alt="people"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    hr {
+        border: 1px solid white;
+        opacity: 1;
+    }
+    button {
+        background-color: #231f20;
+        color: white;
+        border: none;
+        padding: 0.7em 1.5em;
+        text-transform: uppercase;
+        font-weight: 200;
+        transition: 0.2s all ease-in-out;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #231f20;
+    }
+    h4 {
+        font-family: unset;
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 2em;
+        margin-bottom: 0em;
+    }
+    .title {
+        font-size: 3vw;
+    }
+    .modal-content {
+        background-color: #383838;
+    }
+    .close {
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        place-content: center;
+    }
+    .form-group {
+        padding: 0.5em 0em;
+    }
+    /*flipper-card*/
+    .card-title {
+        color: white;
+    }
+    .card-text {
+        color: white;
+    }
+    .card {
+        background-color: transparent;
+        border: none;
+    }
+    .card-flipper {
+        position: relative;
+        float: left;
+        width: 100%;
+        text-align: center;
+        /* height: 450px; */
+    }
+
+    .card__back {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .card__back .card {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .card__front,
+    .card__back {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .card__front {
+        background-color: transparent;
+    }
+
+    .card__back {
+        background-color: #383838;
+        border-radius: 20px;
+        -webkit-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+    .card-flipper.effect__hover:hover .card__front {
+        -webkit-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+
+    .card-flipper.effect__hover:hover .card__back {
+        -webkit-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    .card-flipper.effect__random.flipped .card__front {
+        -webkit-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+
+    .card-flipper.effect__random.flipped .card__back {
+        -webkit-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+</style>
