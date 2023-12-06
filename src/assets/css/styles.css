@@ -997,7 +997,7 @@ h2.lg {
 
 h3 {
     /* font-size: 3rem; */
-    font-size: 3vw;
+    font-size: 3.5vw;
     line-height: 1.2em;
 }
 
@@ -1280,7 +1280,7 @@ img.full-width-img {
 
 .discover-text p {
     /* font-size: 1.3em; */
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.3em;
 }
@@ -1737,7 +1737,7 @@ br {
     }
 
     .discover-text p {
-        font-size: 1.3vw;
+        font-size: 1vw;
     }
 
     .navbar-logo p {
