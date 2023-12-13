@@ -130,6 +130,51 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </section>
+
+    <section class="container-fluid py-6 gray-bg" id="services">
+        <div
+            class="container-large m-auto row align-items-center mobile-column mobile-padding"
+        >
+            <div class="col white-txt">
+                <h3 class="title-cash text-center">
+                    How much CASH BACK should you expect?
+                </h3>
+                <hr />
+                <ul>
+                    <li class="py-3">
+                        Cash Back incentives are determined by factors such as
+                        purchase price, commission paid on the property, and
+                        location. For a detailed breakdown, refer to the chart
+                        on the next page illustrating Cash Back estimates based
+                        on purchase price.
+                    </li>
+                    <li class="py-3">
+                        Thanks to our partnerships and nationwide network, W
+                        Relocation stands out by offering your workforce some of
+                        the industry’s most competitive Cash Back amounts,
+                        averaging approximately 1% of the purchase price.
+                    </li>
+                    <li class="py-3">
+                        Your employees will not only benefit from substantial
+                        Cash Back but also enjoy reduced closing costs, often
+                        totaling thousands of dollars, through our strategic
+                        alliances with Title partners.
+                    </li>
+                    <li class="py-3">
+                        Your employees will also benefit from reduced financing
+                        costs when utilizing our preferred Lenders and Mortgage
+                        Brokers across the country.
+                    </li>
+                </ul>
+                <button
+                    type="button"
+                    class="btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#form">Cash Back Chart</button
+                >
+            </div>
+        </div>
+    </section>
 </Layout>
 
 <style>
@@ -158,6 +203,12 @@ import Layout from "../layouts/Layout.astro";
     h3 {
         font-size: 2em;
         margin-bottom: 0em;
+    }
+    .title-cash {
+        font-size: 3.5em;
+    }
+    li {
+        font-size: 1.2em;
     }
     .title {
         font-size: 3vw;
