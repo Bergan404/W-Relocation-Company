@@ -170,8 +170,42 @@ import Layout from "../layouts/Layout.astro";
                     type="button"
                     class="btn-danger"
                     data-bs-toggle="modal"
-                    data-bs-target="#form">Cash Back Chart</button
+                    data-bs-target="#chart">Cash Back Chart</button
                 >
+
+                <!-- MODAL -->
+                <div
+                    class="modal fade"
+                    id="chart"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Cash Back Program
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/images/cash-back-new.png" alt="Cash Back Program" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
