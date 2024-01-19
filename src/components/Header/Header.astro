@@ -11,7 +11,7 @@ const { title } = Astro.props;
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -47,7 +47,7 @@ const { title } = Astro.props;
         <div class="row justify-content-between align-items-center">
             <div class="col-auto">
                 <a class="navbar-logo" href="/">
-                    <p>W Relocation <br> Company</p>
+                    <p>W Relocation <br /> Company</p>
                 </a>
             </div>
             <div class="col-auto">
@@ -83,12 +83,12 @@ const { title } = Astro.props;
     <nav class="mobile-nav d-flex justify-content-center align-items-center">
         <div class="menu-primary-container">
             <ul id="menu-primary" class="menu">
-                <Nav href="#" title="Contact Us" />
-                <Nav href="#" title="About Us" />
-                <Nav href="#" title="Programs" />
-                <Nav href="#" title="Relocation Services" />
+                <Nav href="/about" title="About Us" />
+                <Nav href="/program" title="Programs" />
+                <Nav href="/#services" title="Services" />
+                <Nav href="/#contact" title="Contact Us" />
                 <!-- <Nav href="#" title="Partners" /> -->
-                <Nav href="#" title="Moving" />
+                <!-- <Nav href="#" title="Moving" /> -->
             </ul>
         </div>
     </nav>
