@@ -1,0 +1,401 @@
+---
+import Contact from "../components/Contact.astro";
+import Partners from "../components/Partners.astro";
+import Services from "../components/Services.astro";
+import SvgIconItem from "../components/SvgIconItem.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="W Relocation Company">
+	<section
+		id="homecover-1"
+		class="container-fluid py-5 full-bg"
+		style="background-image: url(/images/screen_2x.webp);"
+		data-aos-easing="ease-out-back"
+		data-aos-duration="1000"
+		data-aos-delay="0"
+	>
+		<div
+			class="container-large m-auto grid-center h-100 p-relative z-5"
+			data-aos="zoom-in"
+			data-aos-duration="1000"
+		>
+			<div
+				class="row justify-content-between gap-5 p-relative z-5 mobile-carry"
+			>
+				<div class="col-4">
+					<img src="/images/W-Relocation.svg" alt="LOGO" />
+				</div>
+				<div
+					class="col-7 white-txt d-flex flex-column justify-content-around"
+				>
+					<h4>Let the experts help you.</h4>
+					<h2>
+						Taking care of your Relocation needs is what we do <em
+							>best.</em
+						>
+					</h2>
+					<a href="#discover">
+						<button class="discover-btn"
+							>Discover W Relocation</button
+						>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</section>
+
+	<!-- Why W Relocations -->
+	<section
+		class="container-fluid py-6 d-flex align-items-center justify-content-center"
+	>
+		<div class="container-large w-100">
+			<h3 class="text-center line-above sort-of-bigger-text">
+				WHY W RELOCATION
+			</h3>
+			<div class="row py-9 justify-content-between column-on-mobile">
+				<SvgIconItem
+					title="Technology."
+					image="/images/computer.svg"
+					color="gray"
+					duration="1000"
+				/>
+				<SvgIconItem
+					title="CARING."
+					image="/images/Hands.svg"
+					color="purple"
+					duration="1000"
+				/>
+				<SvgIconItem
+					title="TEAM."
+					image="/images/People.svg"
+					color="blue"
+					duration="1000"
+				/>
+				<SvgIconItem
+					title="FULL-SERVICE."
+					image="/images/Wizard.svg"
+					color="brown"
+					duration="1000"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<!-- Discover W Relocations -->
+	<section
+		class="container-fluid py-9 gray-bg px-0 d-flex align-items-center"
+		id="discover"
+	>
+		<div class="row mobile-column mobile-padding h-100">
+			<div class="col p-relative">
+				<img
+					class="absolute-off"
+					src="/images/discover-image.webp"
+					alt="Discover Interior"
+					data-aos="zoom-in-right"
+					data-aos-duration="1000"
+				/>
+			</div>
+			<div
+				class="col white-txt px-5 d-flex flex-column justify-content-between"
+			>
+				<h3><em>DISCOVER <br /> W RELOCATION</em></h3>
+				<div class="discover-text">
+					<p>
+						We specialize in tailoring benefits and personalized
+						discounts that go beyond the ordinary, ensuring a
+						seamless transition for your members and employees. Our
+						commitment is to customize these benefits to meet the
+						unique needs of each individual, covering aspects such
+						as Real Estate, Mortgages, and Title Services, making
+						significant life events like buying a home truly
+						enjoyable experiences.
+					</p>
+					<p>
+						Our program extends beyond solely assisting higher-level
+						employees with corporate-sponsored benefits. We
+						recognize the diverse needs of your workforce, including
+						those who are local or may not qualify for a full
+						benefits package. W Relocation is designed to be
+						accessible and beneficial to all members of your
+						organization.
+					</p>
+					<p>
+						By aligning with W Relocation, you provide your team
+						with a variety of benefits that boost morale, enhance
+						retention rates, and elevate your appeal to new talent.
+						We understand that the journey of relocation, local,
+						national, or global, is a complex and exciting process,
+						and our comprehensive services are geared towards making
+						it a positive and rewarding experience for everyone
+						involved.
+					</p>
+				</div>
+				<a href="#programs" class="mobile-center">
+					<button class="discover-btn">Learn More</button>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Partners -->
+	<!-- <section class="container-fluid py-6">
+		<div class="container">
+			<h3 class="text-center">PARTNERS</h3>
+			<div class="row py-5 justify-content-between">
+				<Partners
+					title="Bank Bank"
+					image="../src/assets/images/computer.svg"
+				/>
+				<Partners
+					title="Digital Solutions"
+					image="../src/assets/images/computer.svg"
+				/>
+				<Partners
+					title="Perlanton Inc"
+					image="../src/assets/images/computer.svg"
+				/>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Cash Back program -->
+	<!-- <section class="py-4 container" id="programs">
+		<div class="row mobile-column align-items-center">
+			<div class="col grid-center">
+				<h1 class="py-4 bigger-text-big big-line-height">
+					REAL ESTATE CASH PROGRAM
+				</h1>
+				<a href="/program" class="center">
+					<button class="discover-btn-negative">Learn More</button>
+				</a>
+			</div>
+			<div class="col-6">
+				<img src="/images/cash-back-new.png" alt="Cash Back Program" />
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Our Services -->
+	<section class="container-fluid py-6 gray-bg px-0" id="services">
+		<div class="row align-items-center mobile-column mobile-padding">
+			<div class="col white-txt px-5 text-center">
+				<div class="col-10 m-auto">
+					<h3 class="text-left"><em>OUR <br /> SERVICES</em></h3>
+				</div>
+				<div class="col-10 m-auto">
+					<img
+						src="/images/boxes-cut.webp"
+						alt="boxes"
+						data-aos="zoom-in"
+						data-aos-duration="1000"
+					/>
+				</div>
+			</div>
+			<div class="col row flex-column justify-content-between gap-5">
+				<Services
+					number="01"
+					title="National Reach, Local Expertise"
+					description="A skilled team of realtors strategically positioned across the nation."
+				/>
+				<Services
+					number="02"
+					title="First Class Real Estate Experience"
+					description="Our real estate network comprises highly skilled and experienced individuals dedicated to a high level of customer service."
+				/>
+				<Services
+					number="03"
+					title="Full-Service"
+					description="Feel confident about every aspect of the Real Estate portion of your move from Real Estate, Mortgages, and Title Services."
+				/>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section
+		class="container-fluid py-5 full-bg vh-90 p-relative"
+		style="background-image: url(/images/contact-us-section.webp);"
+		id="contact"
+	>
+		<div class="container d-flex h-100">
+			<div class="row gap-5 p-relative z-5 align-items-center w-100">
+				<div class="col text-center">
+					<h1 class="white-txt bigger-text">Contact</h1>
+					<div class="py-3">
+						<button
+							type="button"
+							class="btn-contact"
+							data-bs-toggle="modal"
+							data-bs-target="#form">Contact us today</button
+						>
+						<!-- MODAL -->
+						<div
+							class="modal fade"
+							id="form"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div
+								class="modal-dialog modal-dialog-centered"
+								role="document"
+							>
+								<div class="modal-content">
+									<div class="modal-header border-bottom-0">
+										<h5
+											class="modal-title white-txt"
+											id="exampleModalLabel"
+										>
+											Contact Us Today
+										</h5>
+										<button
+											type="button"
+											class="close btn-contact"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true"
+												>&times;</span
+											>
+										</button>
+									</div>
+									<form>
+										<div class="modal-body">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													id="name1"
+													aria-describedby="fullnameHelp"
+													placeholder="Full Name"
+												/>
+											</div>
+											<div class="form-group">
+												<input
+													type="email"
+													class="form-control"
+													id="email1"
+													aria-describedby="emailHelp"
+													placeholder="Email Address"
+												/>
+											</div>
+											<div class="form-group">
+												<textarea
+													rows="4"
+													cols="50"
+													class="form-control"
+													id="textarea"
+													placeholder="Message"
+												></textarea>
+											</div>
+										</div>
+										<div
+											class="modal-footer border-top-0 d-flex justify-content-center"
+										>
+											<button
+												type="submit"
+												class="btn-success btn-contact"
+												>Submit</button
+											>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col white-txt">
+					<Contact
+						addressName="Main Office"
+						addressStreet="777 S Federal Hwy"
+						addressCity="Fort Lauderdale, FL 33316"
+						phone="954.649.7444"
+						email="GWhiddon@wrelocation.com"
+						instagram="test.com"
+					/>
+				</div>
+			</div>
+			<div class="overlay-darker"></div>
+		</div>
+	</section>
+
+	<style>
+		main {
+			margin: auto;
+			padding: 1.5rem;
+			max-width: 60ch;
+		}
+		h1 {
+			font-size: 3rem;
+			font-weight: 800;
+			margin: 0;
+		}
+
+		.btn-contact {
+			background-color: #231f20;
+			color: white;
+			border: none;
+			padding: 0.7em 1.5em;
+			text-transform: uppercase;
+			font-weight: 200;
+			transition: 0.2s all ease-in-out;
+		}
+
+		.btn-contact:hover {
+			background-color: white;
+			color: #231f20;
+		}
+		.modal-content {
+			background-color: #383838;
+		}
+		.close {
+			border-radius: 50px;
+			width: 50px;
+			height: 50px;
+			display: grid;
+			place-content: center;
+		}
+		.form-group {
+			padding: 0.5em 0em;
+		}
+		.modal-backdrop {
+			z-index: 5 !important;
+		}
+		.text-gradient {
+			background-image: var(--accent-gradient);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-size: 400%;
+			background-position: 0%;
+		}
+		.instructions {
+			line-height: 1.6;
+			margin: 1rem 0;
+			border: 1px solid rgba(var(--accent), 25%);
+			background-color: white;
+			padding: 1rem;
+			border-radius: 0.4rem;
+		}
+		.instructions code {
+			font-size: 0.875em;
+			font-weight: bold;
+			background: rgba(var(--accent), 12%);
+			color: rgb(var(--accent));
+			border-radius: 4px;
+			padding: 0.3em 0.45em;
+		}
+		.instructions strong {
+			color: rgb(var(--accent));
+		}
+		.link-card-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+			gap: 1rem;
+			padding: 0;
+		}
+	</style>
+</Layout>
