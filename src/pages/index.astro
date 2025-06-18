@@ -3,399 +3,549 @@ import Contact from "../components/Contact.astro";
 import Partners from "../components/Partners.astro";
 import Services from "../components/Services.astro";
 import SvgIconItem from "../components/SvgIconItem.astro";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Redesign.astro";
 ---
 
 <Layout title="W Relocation Company">
-	<section
-		id="homecover-1"
-		class="container-fluid py-5 full-bg"
-		style="background-image: url(/images/screen_2x.webp);"
-		data-aos-easing="ease-out-back"
-		data-aos-duration="1000"
-		data-aos-delay="0"
-	>
-		<div
-			class="container-large m-auto grid-center h-100 p-relative z-5"
-			data-aos="zoom-in"
-			data-aos-duration="1000"
-		>
-			<div
-				class="row justify-content-between gap-5 p-relative z-5 mobile-carry"
-			>
-				<div class="col-4">
-					<img src="/images/W-Relocation.svg" alt="LOGO" />
-				</div>
-				<div
-					class="col-7 white-txt d-flex flex-column justify-content-around"
-				>
-					<h4>Let the experts help you.</h4>
-					<h2>
-						Taking care of your Relocation needs is what we do <em
-							>best.</em
-						>
-					</h2>
-					<a href="#discover">
-						<button class="discover-btn"
-							>Discover W Relocation</button
-						>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="overlay"></div>
-	</section>
+	 <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span>W</span>Relocation
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#case-studies">Case Studies</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="cta-container">
+                <a href="#demo" class="nav-cta">Request Demo</a>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	<!-- Why W Relocations -->
-	<section
-		class="container-fluid py-6 d-flex align-items-center justify-content-center"
-	>
-		<div class="container-large w-100">
-			<h3 class="text-center line-above sort-of-bigger-text">
-				WHY W RELOCATION
-			</h3>
-			<div class="row py-9 justify-content-between column-on-mobile">
-				<SvgIconItem
-					title="Technology."
-					image="/images/computer.svg"
-					color="gray"
-					duration="1000"
-				/>
-				<SvgIconItem
-					title="CARING."
-					image="/images/Hands.svg"
-					color="purple"
-					duration="1000"
-				/>
-				<SvgIconItem
-					title="TEAM."
-					image="/images/People.svg"
-					color="blue"
-					duration="1000"
-				/>
-				<SvgIconItem
-					title="FULL-SERVICE."
-					image="/images/Wizard.svg"
-					color="brown"
-					duration="1000"
-				/>
-			</div>
-		</div>
-	</section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Your <span>Employee Relocation</span> Experience</h1>
+            <p>Seamless transitions, significant savings, and superior support for your team</p>
+            <div class="hero-cta">
+                <a href="#calculator" class="primary-btn">Try Our Calculator</a>
+                <a href="#solutions" class="secondary-btn">Explore Solutions</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://placehold.co/600x400/6DBE45/fff?text=Relocation+Made+Simple" alt="Relocation Made Simple">
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
 
-	<!-- Discover W Relocations -->
-	<section
-		class="container-fluid py-9 gray-bg px-0 d-flex align-items-center"
-		id="discover"
-	>
-		<div class="row mobile-column mobile-padding h-100">
-			<div class="col p-relative">
-				<img
-					class="absolute-off"
-					src="/images/discover-image.webp"
-					alt="Discover Interior"
-					data-aos="zoom-in-right"
-					data-aos-duration="1000"
-				/>
-			</div>
-			<div
-				class="col white-txt px-5 d-flex flex-column justify-content-between"
-			>
-				<h3><em>DISCOVER <br /> W RELOCATION</em></h3>
-				<div class="discover-text">
-					<p>
-						We specialize in tailoring benefits and personalized
-						discounts that go beyond the ordinary, ensuring a
-						seamless transition for your members and employees. Our
-						commitment is to customize these benefits to meet the
-						unique needs of each individual, covering aspects such
-						as Real Estate, Mortgages, and Title Services, making
-						significant life events like buying a home truly
-						enjoyable experiences.
-					</p>
-					<p>
-						Our program extends beyond solely assisting higher-level
-						employees with corporate-sponsored benefits. We
-						recognize the diverse needs of your workforce, including
-						those who are local or may not qualify for a full
-						benefits package. W Relocation is designed to be
-						accessible and beneficial to all members of your
-						organization.
-					</p>
-					<p>
-						By aligning with W Relocation, you provide your team
-						with a variety of benefits that boost morale, enhance
-						retention rates, and elevate your appeal to new talent.
-						We understand that the journey of relocation, local,
-						national, or global, is a complex and exciting process,
-						and our comprehensive services are geared towards making
-						it a positive and rewarding experience for everyone
-						involved.
-					</p>
-				</div>
-				<a href="#programs" class="mobile-center">
-					<button class="discover-btn">Learn More</button>
-				</a>
-			</div>
-		</div>
-	</section>
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-number" data-count="94">0</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="32">0</div>
+                <div class="stat-label">States Covered</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="5000">0</div>
+                <div class="stat-label">Relocations Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="3.2">0</div>
+                <div class="stat-label">Million in Rebates</div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Partners -->
-	<!-- <section class="container-fluid py-6">
-		<div class="container">
-			<h3 class="text-center">PARTNERS</h3>
-			<div class="row py-5 justify-content-between">
-				<Partners
-					title="Bank Bank"
-					image="../src/assets/images/computer.svg"
-				/>
-				<Partners
-					title="Digital Solutions"
-					image="../src/assets/images/computer.svg"
-				/>
-				<Partners
-					title="Perlanton Inc"
-					image="../src/assets/images/computer.svg"
-				/>
-			</div>
-		</div>
-	</section> -->
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="section-header">
+            <h2>Why Choose <span>W Relocation</span></h2>
+            <p>Comprehensive benefits that transform the relocation experience</p>
+        </div>
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>Significant Savings</h3>
+                <p>Our cash rebate program puts money back in your employees' pockets, with rebates up to $5,000 per transaction.</p>
+                <a href="#calculator" class="benefit-link">Calculate Savings</a>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3>Nationwide Network</h3>
+                <p>Access to top real estate professionals across all 50 states, ensuring quality service no matter the location.</p>
+                <a href="#" class="benefit-link">View Coverage</a>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Full-Service Support</h3>
+                <p>Comprehensive assistance with real estate, mortgages, and title services for a seamless relocation experience.</p>
+                <a href="#solutions" class="benefit-link">Learn More</a>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Retention Boost</h3>
+                <p>Enhance your benefits package with relocation perks that improve employee satisfaction and retention.</p>
+                <a href="#case-studies" class="benefit-link">See Results</a>
+            </div>
+        </div>
+    </section>
 
-	<!-- Cash Back program -->
-	<!-- <section class="py-4 container" id="programs">
-		<div class="row mobile-column align-items-center">
-			<div class="col grid-center">
-				<h1 class="py-4 bigger-text-big big-line-height">
-					REAL ESTATE CASH PROGRAM
-				</h1>
-				<a href="/program" class="center">
-					<button class="discover-btn-negative">Learn More</button>
-				</a>
-			</div>
-			<div class="col-6">
-				<img src="/images/cash-back-new.png" alt="Cash Back Program" />
-			</div>
-		</div>
-	</section> -->
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions-section">
+        <div class="section-header">
+            <h2>Enterprise <span>Solutions</span></h2>
+            <p>Tailored relocation programs for organizations of all sizes</p>
+        </div>
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="hr-integration">HR Integration</button>
+                <button class="tab-btn" data-tab="employee-portal">Employee Portal</button>
+                <button class="tab-btn" data-tab="custom-programs">Custom Programs</button>
+                <button class="tab-btn" data-tab="global-mobility">Global Mobility</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="hr-integration">
+                    <div class="tab-image">
+                        <img src="https://placehold.co/600x400/6DBE45/fff?text=HR+Integration" alt="HR Integration">
+                    </div>
+                    <div class="tab-info">
+                        <h3>Seamless HR System Integration</h3>
+                        <p>Our platform integrates with your existing HR systems, including Workday, ADP, and SAP, creating a unified experience for your team.</p>
+                        <ul class="feature-list">
+                            <li>Single sign-on capabilities</li>
+                            <li>Automated data synchronization</li>
+                            <li>Custom reporting and analytics</li>
+                            <li>Workflow automation</li>
+                        </ul>
+                        <a href="#demo" class="tab-cta">Schedule Integration Demo</a>
+                    </div>
+                </div>
+                <div class="tab-pane" id="employee-portal">
+                    <div class="tab-image">
+                        <img src="https://placehold.co/600x400/6DBE45/fff?text=Employee+Portal" alt="Employee Portal">
+                    </div>
+                    <div class="tab-info">
+                        <h3>Intuitive Employee Portal</h3>
+                        <p>Give your employees a dedicated platform to manage their relocation journey, access resources, and track their benefits.</p>
+                        <ul class="feature-list">
+                            <li>Mobile-friendly interface</li>
+                            <li>Document management</li>
+                            <li>Step-by-step relocation guides</li>
+                            <li>Real-time status updates</li>
+                        </ul>
+                        <a href="#demo" class="tab-cta">View Portal Demo</a>
+                    </div>
+                </div>
+                <div class="tab-pane" id="custom-programs">
+                    <div class="tab-image">
+                        <img src="https://placehold.co/600x400/6DBE45/fff?text=Custom+Programs" alt="Custom Programs">
+                    </div>
+                    <div class="tab-info">
+                        <h3>Tailored Relocation Programs</h3>
+                        <p>Create custom relocation packages that align with your company culture, budget, and specific employee needs.</p>
+                        <ul class="feature-list">
+                            <li>Tiered benefit structures</li>
+                            <li>Role-based customization</li>
+                            <li>Budget optimization tools</li>
+                            <li>White-labeled solutions</li>
+                        </ul>
+                        <a href="#demo" class="tab-cta">Discuss Custom Solutions</a>
+                    </div>
+                </div>
+                <div class="tab-pane" id="global-mobility">
+                    <div class="tab-image">
+                        <img src="https://placehold.co/600x400/6DBE45/fff?text=Global+Mobility" alt="Global Mobility">
+                    </div>
+                    <div class="tab-info">
+                        <h3>Global Mobility Management</h3>
+                        <p>Support for international relocations with comprehensive services that address the complexities of global moves.</p>
+                        <ul class="feature-list">
+                            <li>International housing assistance</li>
+                            <li>Visa and immigration support</li>
+                            <li>Cross-cultural training</li>
+                            <li>Global tax compliance</li>
+                        </ul>
+                        <a href="#demo" class="tab-cta">Explore Global Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Our Services -->
-	<section class="container-fluid py-6 gray-bg px-0" id="services">
-		<div class="row align-items-center mobile-column mobile-padding">
-			<div class="col white-txt px-5 text-center">
-				<div class="col-10 m-auto">
-					<h3 class="text-left"><em>OUR <br /> SERVICES</em></h3>
-				</div>
-				<div class="col-10 m-auto">
-					<img
-						src="/images/boxes-cut.webp"
-						alt="boxes"
-						data-aos="zoom-in"
-						data-aos-duration="1000"
-					/>
-				</div>
-			</div>
-			<div class="col row flex-column justify-content-between gap-5">
-				<Services
-					number="01"
-					title="National Reach, Local Expertise"
-					description="A skilled team of realtors strategically positioned across the nation."
-				/>
-				<Services
-					number="02"
-					title="First Class Real Estate Experience"
-					description="Our real estate network comprises highly skilled and experienced individuals dedicated to a high level of customer service."
-				/>
-				<Services
-					number="03"
-					title="Full-Service"
-					description="Feel confident about every aspect of the Real Estate portion of your move from Real Estate, Mortgages, and Title Services."
-				/>
-			</div>
-		</div>
-	</section>
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="section-header">
+            <h2>The <span>W Relocation</span> Advantage</h2>
+            <p>See how our solution compares to traditional relocation programs</p>
+        </div>
+        <div class="comparison-table-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Features</th>
+                        <th>Traditional Programs</th>
+                        <th>W Relocation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cash Rebates</td>
+                        <td><i class="fas fa-times"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>HR System Integration</td>
+                        <td><i class="fas fa-times"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Nationwide Coverage</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Portal</td>
+                        <td>Limited</td>
+                        <td>Comprehensive</td>
+                    </tr>
+                    <tr>
+                        <td>Cost to Employer</td>
+                        <td>High</td>
+                        <td>Minimal</td>
+                    </tr>
+                    <tr>
+                        <td>Implementation Time</td>
+                        <td>2-3 Months</td>
+                        <td>2-3 Weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-	<!-- Contact Section -->
-	<section
-		class="container-fluid py-5 full-bg vh-90 p-relative"
-		style="background-image: url(/images/contact-us-section.webp);"
-		id="contact"
-	>
-		<div class="container d-flex h-100">
-			<div class="row gap-5 p-relative z-5 align-items-center w-100">
-				<div class="col text-center">
-					<h1 class="white-txt bigger-text">Contact</h1>
-					<div class="py-3">
-						<button
-							type="button"
-							class="btn-contact"
-							data-bs-toggle="modal"
-							data-bs-target="#form">Contact us today</button
-						>
-						<!-- MODAL -->
-						<div
-							class="modal fade"
-							id="form"
-							tabindex="-1"
-							role="dialog"
-							aria-labelledby="exampleModalLabel"
-							aria-hidden="true"
-						>
-							<div
-								class="modal-dialog modal-dialog-centered"
-								role="document"
-							>
-								<div class="modal-content">
-									<div class="modal-header border-bottom-0">
-										<h5
-											class="modal-title white-txt"
-											id="exampleModalLabel"
-										>
-											Contact Us Today
-										</h5>
-										<button
-											type="button"
-											class="close btn-contact"
-											data-bs-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true"
-												>&times;</span
-											>
-										</button>
-									</div>
-									<form>
-										<div class="modal-body">
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													id="name1"
-													aria-describedby="fullnameHelp"
-													placeholder="Full Name"
-												/>
-											</div>
-											<div class="form-group">
-												<input
-													type="email"
-													class="form-control"
-													id="email1"
-													aria-describedby="emailHelp"
-													placeholder="Email Address"
-												/>
-											</div>
-											<div class="form-group">
-												<textarea
-													rows="4"
-													cols="50"
-													class="form-control"
-													id="textarea"
-													placeholder="Message"
-												></textarea>
-											</div>
-										</div>
-										<div
-											class="modal-footer border-top-0 d-flex justify-content-center"
-										>
-											<button
-												type="submit"
-												class="btn-success btn-contact"
-												>Submit</button
-											>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col white-txt">
-					<Contact
-						addressName="Main Office"
-						addressStreet="777 S Federal Hwy"
-						addressCity="Fort Lauderdale, FL 33316"
-						phone="954.649.7444"
-						email="GWhiddon@wrelocation.com"
-						instagram="test.com"
-					/>
-				</div>
-			</div>
-			<div class="overlay-darker"></div>
-		</div>
-	</section>
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <div class="section-header">
+            <h2>Relocation <span>Calculator</span></h2>
+            <p>Estimate savings and benefits for your organization</p>
+        </div>
+        <div class="calculator-container">
+            <div class="calculator-tabs">
+                <button class="calc-tab-btn active" data-calc="rebate">Rebate Calculator</button>
+                <button class="calc-tab-btn" data-calc="roi">ROI Calculator</button>
+            </div>
+            <div class="calculator-content">
+                <!-- Rebate Calculator -->
+                <div class="calculator-pane active" id="rebate-calculator">
+                    <form class="calc-form" id="rebateForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="salePrice">Home Sale Price</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <input type="number" id="salePrice" placeholder="e.g. 350000" min="50000" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="commission">Commission Rate</label>
+                                <div class="select-wrapper">
+                                    <select id="commission">
+                                        <option value="3">3%</option>
+                                        <option value="2.5">2.5%</option>
+                                        <option value="2">2%</option>
+                                        <option value="1.5">1.5%</option>
+                                        <option value="1">1%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="movingCosts">Estimated Moving Costs</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <input type="number" id="movingCosts" placeholder="e.g. 5000" min="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="closingCosts">Estimated Closing Costs</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <input type="number" id="closingCosts" placeholder="e.g. 8000" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="additional">Additional Expenses</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <input type="number" id="additional" placeholder="e.g. 2000" min="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" id="calculateRebate" class="calc-btn">Calculate</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="calc-results" id="rebateResults">
+                        <!-- Results will be displayed here -->
+                    </div>
+                    <button id="toggleRebateTable" class="secondary-btn">View Rebate Table</button>
+                    <div class="rebate-table" id="rebateTable">
+                        <!-- Rebate table will be displayed here -->
+                    </div>
+                </div>
+                
+                <!-- ROI Calculator -->
+                <div class="calculator-pane" id="roi-calculator">
+                    <form class="calc-form" id="roiForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="employeeCount">Number of Relocations (Annual)</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-users"></i>
+                                    <input type="number" id="employeeCount" placeholder="e.g. 25" min="1" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="avgHomeValue">Average Home Value</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-home"></i>
+                                    <input type="number" id="avgHomeValue" placeholder="e.g. 350000" min="50000" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="currentCost">Current Cost Per Relocation</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <input type="number" id="currentCost" placeholder="e.g. 15000" min="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="retentionRate">Current Retention Rate (%)</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-percentage"></i>
+                                    <input type="number" id="retentionRate" placeholder="e.g. 85" min="0" max="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <button type="button" id="calculateROI" class="calc-btn">Calculate ROI</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="calc-results" id="roiResults">
+                        <!-- ROI Results will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<style>
-		main {
-			margin: auto;
-			padding: 1.5rem;
-			max-width: 60ch;
-		}
-		h1 {
-			font-size: 3rem;
-			font-weight: 800;
-			margin: 0;
-		}
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies-section">
+        <div class="section-header">
+            <h2>Success <span>Stories</span></h2>
+            <p>Real results from organizations like yours</p>
+        </div>
+        <div class="case-studies-slider" id="caseStudiesSlider">
+            <div class="case-study-card">
+                <div class="case-study-logo">
+                    <img src="https://placehold.co/200x80/6DBE45/fff?text=TechCorp" alt="TechCorp Logo">
+                </div>
+                <div class="case-study-content">
+                    <h3>TechCorp Saves $1.2M in Relocation Costs</h3>
+                    <p>A leading technology company with 500+ employees implemented our program and saw immediate results.</p>
+                    <ul>
+                        <li>$1.2M in annual savings</li>
+                        <li>15% increase in relocation satisfaction</li>
+                        <li>Reduced HR administrative time by 65%</li>
+                    </ul>
+                    <a href="#" class="case-study-link">Read Full Case Study</a>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <div class="case-study-logo">
+                    <img src="https://placehold.co/200x80/6DBE45/fff?text=HealthPlus" alt="HealthPlus Logo">
+                </div>
+                <div class="case-study-content">
+                    <h3>HealthPlus Improves Talent Acquisition</h3>
+                    <p>A healthcare network with 12 locations used our relocation program to attract top medical talent.</p>
+                    <ul>
+                        <li>Reduced time-to-hire by 22 days</li>
+                        <li>$450K in employee rebates distributed</li>
+                        <li>92% of relocated employees still with company after 2 years</li>
+                    </ul>
+                    <a href="#" class="case-study-link">Read Full Case Study</a>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <div class="case-study-logo">
+                    <img src="https://placehold.co/200x80/6DBE45/fff?text=GlobalFinance" alt="GlobalFinance Logo">
+                </div>
+                <div class="case-study-content">
+                    <h3>GlobalFinance Streamlines International Moves</h3>
+                    <p>A multinational financial services firm implemented our global mobility solution for cross-border relocations.</p>
+                    <ul>
+                        <li>Supported relocations across 14 countries</li>
+                        <li>Reduced relocation timeline by 40%</li>
+                        <li>Improved employee satisfaction scores from 72% to 94%</li>
+                    </ul>
+                    <a href="#" class="case-study-link">Read Full Case Study</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button id="prevCase" class="slider-btn"><i class="fas fa-arrow-left"></i></button>
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button id="nextCase" class="slider-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
 
-		.btn-contact {
-			background-color: #231f20;
-			color: white;
-			border: none;
-			padding: 0.7em 1.5em;
-			text-transform: uppercase;
-			font-weight: 200;
-			transition: 0.2s all ease-in-out;
-		}
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>Client <span>Testimonials</span></h2>
+            <p>Hear from our satisfied partners</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>W Relocation transformed our approach to employee moves. The rebate program has been a huge hit with our team, and the integration with our HR systems was seamless.</p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/60x60/6DBE45/fff?text=JD" alt="John Doe">
+                        <div>
+                            <h4>John Doe</h4>
+                            <p>HR Director, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The employee portal has made relocations so much easier to manage. Our employees love the transparency and support they receive throughout the process.</p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/60x60/6DBE45/fff?text=JS" alt="Jane Smith">
+                        <div>
+                            <h4>Jane Smith</h4>
+                            <p>Chief People Officer, HealthPlus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		.btn-contact:hover {
-			background-color: white;
-			color: #231f20;
-		}
-		.modal-content {
-			background-color: #383838;
-		}
-		.close {
-			border-radius: 50px;
-			width: 50px;
-			height: 50px;
-			display: grid;
-			place-content: center;
-		}
-		.form-group {
-			padding: 0.5em 0em;
-		}
-		.modal-backdrop {
-			z-index: 5 !important;
-		}
-		.text-gradient {
-			background-image: var(--accent-gradient);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-size: 400%;
-			background-position: 0%;
-		}
-		.instructions {
-			line-height: 1.6;
-			margin: 1rem 0;
-			border: 1px solid rgba(var(--accent), 25%);
-			background-color: white;
-			padding: 1rem;
-			border-radius: 0.4rem;
-		}
-		.instructions code {
-			font-size: 0.875em;
-			font-weight: bold;
-			background: rgba(var(--accent), 12%);
-			color: rgb(var(--accent));
-			border-radius: 4px;
-			padding: 0.3em 0.45em;
-		}
-		.instructions strong {
-			color: rgb(var(--accent));
-		}
-		.link-card-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-			gap: 1rem;
-			padding: 0;
-		}
-	</style>
+    <!-- Demo Request Section -->
+    <section id="demo" class="demo-section">
+        <div class="demo-content">
+            <h2>Ready to Transform Your Relocation Program?</h2>
+            <p>Schedule a personalized demo to see how W Relocation can benefit your organization</p>
+            <form class="demo-form" id="demoForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" placeholder="Company Name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="(123) 456-7890">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="interest">I'm interested in:</label>
+                        <select id="interest">
+                            <option value="general">General Information</option>
+                            <option value="rebate">Rebate Program</option>
+                            <option value="hr">HR Integration</option>
+                            <option value="portal">Employee Portal</option>
+                            <option value="global">Global Mobility</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" placeholder="Tell us about your relocation needs"></textarea>
+                    </div>
+                </div>
+                <button type="button" id="submitDemo" class="primary-btn">Request Demo</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>777 S Federal Hwy<br>Fort Lauderdale, FL 33316</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:9546497444">954.649.7444</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:GWhiddon@wrelocation.com">GWhiddon@wrelocation.com</a></p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
