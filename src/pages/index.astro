@@ -6,6 +6,8 @@ import SvgIconItem from "../components/SvgIconItem.astro";
 import Layout from "../layouts/Redesign.astro";
 import ContactForm from "../components/extras/contact_form.astro";
 import Testimonials from "../components/Testimonials.astro";
+import SuccessStories from "../components/SuccessStories.astro";
+import PercentageCounter from "../components/PercentageCounter.astro";
 ---
 
 <Layout title="W Relocation Company">
@@ -54,26 +56,8 @@ import Testimonials from "../components/Testimonials.astro";
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stat-item">
-                <div class="stat-number" data-count="94">0</div>
-                <div class="stat-label">Client Satisfaction</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="32">0</div>
-                <div class="stat-label">States Covered</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="5000">0</div>
-                <div class="stat-label">Relocations Completed</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="3.2">0</div>
-                <div class="stat-label">Million in Rebates</div>
-            </div>
-        </div>
-    </section>
+	<!-- <PercentageCounter /> -->
+    
 
     <!-- Benefits Section -->
     <section id="benefits" class="benefits-section">
@@ -374,71 +358,11 @@ import Testimonials from "../components/Testimonials.astro";
     </section>
 
     <!-- Case Studies Section -->
-    <section id="case-studies" class="case-studies-section">
-        <div class="section-header">
-            <h2>Success <span>Stories</span></h2>
-            <p>Real results from organizations like yours</p>
-        </div>
-        <div class="case-studies-slider" id="caseStudiesSlider">
-            <div class="case-study-card">
-                <div class="case-study-logo">
-                    <img src="https://placehold.co/200x80/6DBE45/fff?text=TechCorp" alt="TechCorp Logo">
-                </div>
-                <div class="case-study-content">
-                    <h3>TechCorp Saves $1.2M in Relocation Costs</h3>
-                    <p>A leading technology company with 500+ employees implemented our program and saw immediate results.</p>
-                    <ul>
-                        <li>$1.2M in annual savings</li>
-                        <li>15% increase in relocation satisfaction</li>
-                        <li>Reduced HR administrative time by 65%</li>
-                    </ul>
-                    <a href="#" class="case-study-link">Read Full Case Study</a>
-                </div>
-            </div>
-            <div class="case-study-card">
-                <div class="case-study-logo">
-                    <img src="https://placehold.co/200x80/6DBE45/fff?text=HealthPlus" alt="HealthPlus Logo">
-                </div>
-                <div class="case-study-content">
-                    <h3>HealthPlus Improves Talent Acquisition</h3>
-                    <p>A healthcare network with 12 locations used our relocation program to attract top medical talent.</p>
-                    <ul>
-                        <li>Reduced time-to-hire by 22 days</li>
-                        <li>$450K in employee rebates distributed</li>
-                        <li>92% of relocated employees still with company after 2 years</li>
-                    </ul>
-                    <a href="#" class="case-study-link">Read Full Case Study</a>
-                </div>
-            </div>
-            <div class="case-study-card">
-                <div class="case-study-logo">
-                    <img src="https://placehold.co/200x80/6DBE45/fff?text=GlobalFinance" alt="GlobalFinance Logo">
-                </div>
-                <div class="case-study-content">
-                    <h3>GlobalFinance Streamlines International Moves</h3>
-                    <p>A multinational financial services firm implemented our global mobility solution for cross-border relocations.</p>
-                    <ul>
-                        <li>Supported relocations across 14 countries</li>
-                        <li>Reduced relocation timeline by 40%</li>
-                        <li>Improved employee satisfaction scores from 72% to 94%</li>
-                    </ul>
-                    <a href="#" class="case-study-link">Read Full Case Study</a>
-                </div>
-            </div>
-        </div>
-        <div class="slider-controls">
-            <button id="prevCase" class="slider-btn"><i class="fas fa-arrow-left"></i></button>
-            <div class="slider-dots" id="sliderDots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <button id="nextCase" class="slider-btn"><i class="fas fa-arrow-right"></i></button>
-        </div>
-    </section>
+	 <!-- <SuccessStories /> -->
+   
 
     <!-- Testimonials Section -->
-    <Testimonials />
+    <!-- <Testimonials /> -->
 
     <section id="demo" class="demo-section">
         <div class="demo-content">
