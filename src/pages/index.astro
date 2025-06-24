@@ -471,52 +471,47 @@ import Layout from "../layouts/Redesign.astro";
         </div>
     </section>
 
-    <!-- Demo Request Section -->
     <section id="demo" class="demo-section">
         <div class="demo-content">
             <h2>Ready to Transform Your Relocation Program?</h2>
             <p>Schedule a personalized demo to see how W Relocation can benefit your organization</p>
-            <form class="demo-form" id="demoForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" placeholder="Company Name" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" placeholder="(123) 456-7890">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="interest">I'm interested in:</label>
-                        <select id="interest">
-                            <option value="general">General Information</option>
-                            <option value="rebate">Rebate Program</option>
-                            <option value="hr">HR Integration</option>
-                            <option value="portal">Employee Portal</option>
-                            <option value="global">Global Mobility</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="message">Additional Information</label>
-                        <textarea id="message" placeholder="Tell us about your relocation needs"></textarea>
-                    </div>
-                </div>
-                <button type="button" id="submitDemo" class="primary-btn">Request Demo</button>
-            </form>
+			<form method="POST" id="form" class="demo-form">
+				<!-- ME -->
+				<!-- <input type="hidden" name="access_key" value="6abde44e-c171-4e1a-ab69-cda1f0c23201"> -->
+				 <!-- WRELO -->
+				<input type="hidden" name="access_key" value="52d5ed69-c8e8-4f24-8711-6f78da63f38c">
+				<input type="hidden" name="formPurpose" value="WRelocation Request Demo">
+				<input type="hidden" name="subject" value="WRelocation Request Demo">
+
+				<label for="fullName">Full Name*</label>
+				<input type="text" id="fullName" name="fullName" required>
+
+				<label for="email">Email*</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="phone">Phone*</label>
+				<input type="tel" id="phone" name="phone" required>
+
+				<label for="interest">I'm interested in:</label>
+				<select id="interest">
+					<option value="general">General Information</option>
+					<option value="rebate">Rebate Program</option>
+					<option value="hr">HR Integration</option>
+					<option value="portal">Employee Portal</option>
+					<option value="global">Global Mobility</option>
+				</select>
+
+				<input type="hidden" id="interest_result" name="interest">
+
+				<label for="message">Additional Information</label>
+				<textarea name="message" placeholder="Tell us about your relocation needs" required></textarea>
+
+				<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+				<button type="submit">Request Demo</button>
+				<div id="result"></div>
+			</form>
+
+		</form>
         </div>
     </section>
 
@@ -549,3 +544,99 @@ import Layout from "../layouts/Redesign.astro";
         </div>
     </section>
 </Layout>
+
+<script>
+
+let selectedInterestGlobal = null;
+
+const dropdown = document.getElementById("interest");
+const interestInput = document.getElementById("interest_result");
+
+selectedInterestGlobal = dropdown.value;
+interestInput.value = selectedInterestGlobal;
+
+dropdown.addEventListener('change', async (e) => {
+	selectedInterestGlobal = e.target.value;
+	interestInput.value = selectedInterestGlobal;
+});
+
+
+
+
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = "Form submitted successfully";
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+</script>
+
+<style>
+    form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* max-width: 600px; */
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 80px;
+        }
+        button {
+            background-color: #C2AA95;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #978473;
+        }
+</style>
