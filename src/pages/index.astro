@@ -164,13 +164,12 @@ import EnterpriseSolutions from "../components/EnterpriseSolutions.astro";
         </div>
         <div class="calculator-container">
             <div class="calculator-tabs">
-                <button class="calc-tab-btn" data-calc="rebate">Rebate Calculator</button>
-                <!-- <button class="calc-tab-btn" data-calc="roi">ROI Calculator</button> -->
+                <div class="calc-tab-btn" data-calc="rebate">Rebate Calculator</div>
             </div>
             <div class="calculator-content">
                 <!-- Rebate Calculator -->
                 <div class="calculator-pane active" id="rebate-calculator">
-                    <form class="calc-form" id="rebateForm">
+                    <!-- <form class="calc-form" id="rebateForm">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="salePrice">Home Sale Price</label>
@@ -192,87 +191,35 @@ import EnterpriseSolutions from "../components/EnterpriseSolutions.astro";
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="movingCosts">Estimated Moving Costs</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="movingCosts" placeholder="e.g. 5000" min="0">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="closingCosts">Estimated Closing Costs</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="closingCosts" placeholder="e.g. 8000" min="0">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="additional">Additional Expenses</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="additional" placeholder="e.g. 2000" min="0">
-                                </div>
-                            </div>
+                            
                             <div class="form-group">
                                 <button type="button" id="calculateRebate" class="calc-btn">Calculate</button>
                             </div>
                         </div>
                     </form>
-                    <div class="calc-results" id="rebateResults">
-                        <!-- Results will be displayed here -->
-                    </div>
-                    <button id="toggleRebateTable" class="secondary-btn">View Rebate Table</button>
+                    <div class="calc-results" id="rebateResults"></div> -->
+                    <!-- <button id="toggleRebateTable" class="secondary-btn">View Rebate Table</button>
                     <div class="rebate-table" id="rebateTable">
-                        <!-- Rebate table will be displayed here -->
+                    </div> -->
+                    <div class="slider-wrapper">
+                        <div class="slider-group">
+                            <label for="priceSlider"><strong>Home Sale Price:</strong> $<span id="priceValue">500000</span></label>
+                            <input type="range" id="priceSlider" min="50000" max="2000000" step="10000" value="500000">
+                        </div>
+
+                        <div class="slider-group">
+                            <label for="commissionSlider"><strong>Commission Rate:</strong> <span id="commissionValue">2.5</span>%</label>
+                            <input type="range" id="commissionSlider" min="1" max="3" step="0.1" value="2.5">
+                        </div>
                     </div>
-                </div>
-                
-                <!-- ROI Calculator -->
-                <div class="calculator-pane" id="roi-calculator">
-                    <form class="calc-form" id="roiForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="employeeCount">Number of Relocations (Annual)</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-users"></i>
-                                    <input type="number" id="employeeCount" placeholder="e.g. 25" min="1" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="avgHomeValue">Average Home Value</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-home"></i>
-                                    <input type="number" id="avgHomeValue" placeholder="e.g. 350000" min="50000" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="currentCost">Current Cost Per Relocation</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="currentCost" placeholder="e.g. 15000" min="0">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="retentionRate">Current Retention Rate (%)</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-percentage"></i>
-                                    <input type="number" id="retentionRate" placeholder="e.g. 85" min="0" max="100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <button type="button" id="calculateROI" class="calc-btn">Calculate ROI</button>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="calc-results" id="roiResults">
-                        <!-- ROI Results will be displayed here -->
+
+                    <div class="results-box" id="sliderResults">
+                        <h4>Rebate Estimate</h4>
+                        <p><strong>Selected Price Range:</strong> $<span id="rangeMin"></span> - $<span id="rangeMax"></span></p>
+                        <p><strong>Commission Rate:</strong> <span id="liveCommissionRate"></span>%</p>
+                        <p><strong>Estimated Rebate (30%):</strong> $<span id="rebateAmount"></span> <em class="small">APPROXIMATE REBATES ARE SUBJECT TO CHANGE</em></p>
                     </div>
                 </div>
             </div>
@@ -281,7 +228,6 @@ import EnterpriseSolutions from "../components/EnterpriseSolutions.astro";
 
     <!-- Case Studies Section -->
 	 <!-- <SuccessStories /> -->
-   
 
     <!-- Testimonials Section -->
     <!-- <Testimonials /> -->
