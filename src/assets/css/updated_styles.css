@@ -18,6 +18,10 @@
      box-sizing: border-box;
  }
 
+ html {
+    scroll-behavior: smooth;
+ }
+
  body {
      font-family: 'Poppins', sans-serif;
      color: var(--dark-gray);
@@ -712,7 +716,7 @@
 
  .input-with-icon i {
      position: absolute;
-     left: 15px;
+     left: 5px;
      top: 50%;
      transform: translateY(-50%);
      color: var(--medium-gray);

@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^8.0.4",
+    "@astrojs/vercel": "^8.2.0",
     "aos": "^2.3.4",
-    "astro": "^5.9.4"
+    "astro": "^5.10.1"
   },
   "engines": {
     "node": ">=18.20.8"
