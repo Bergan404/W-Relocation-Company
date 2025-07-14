@@ -4,6 +4,11 @@ import Partners from "../components/Partners.astro";
 import Services from "../components/Services.astro";
 import SvgIconItem from "../components/SvgIconItem.astro";
 import Layout from "../layouts/Redesign.astro";
+import ContactForm from "../components/extras/contact_form.astro";
+import Testimonials from "../components/Testimonials.astro";
+import SuccessStories from "../components/SuccessStories.astro";
+import PercentageCounter from "../components/PercentageCounter.astro";
+import EnterpriseSolutions from "../components/EnterpriseSolutions.astro";
 ---
 
 <Layout title="W Relocation Company">
@@ -18,7 +23,7 @@ import Layout from "../layouts/Redesign.astro";
                 <a href="#benefits">Benefits</a>
                 <a href="#solutions">Solutions</a>
                 <a href="#calculator">Calculator</a>
-                <a href="#case-studies">Case Studies</a>
+                <!-- <a href="#case-studies">Case Studies</a> -->
                 <a href="#contact">Contact</a>
             </div>
             <div class="cta-container">
@@ -39,7 +44,7 @@ import Layout from "../layouts/Redesign.astro";
             <p>Seamless transitions, significant savings, and superior support for your team</p>
             <div class="hero-cta">
                 <a href="#calculator" class="primary-btn">Try Our Calculator</a>
-                <a href="#solutions" class="secondary-btn">Explore Solutions</a>
+                <!-- <a href="#solutions" class="secondary-btn">Explore Solutions</a> -->
             </div>
         </div>
         <div class="hero-image">
@@ -52,26 +57,8 @@ import Layout from "../layouts/Redesign.astro";
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stat-item">
-                <div class="stat-number" data-count="94">0</div>
-                <div class="stat-label">Client Satisfaction</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="32">0</div>
-                <div class="stat-label">States Covered</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="5000">0</div>
-                <div class="stat-label">Relocations Completed</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="3.2">0</div>
-                <div class="stat-label">Million in Rebates</div>
-            </div>
-        </div>
-    </section>
+	<!-- <PercentageCounter /> -->
+    
 
     <!-- Benefits Section -->
     <section id="benefits" class="benefits-section">
@@ -116,86 +103,7 @@ import Layout from "../layouts/Redesign.astro";
     </section>
 
     <!-- Solutions Section -->
-    <section id="solutions" class="solutions-section">
-        <div class="section-header">
-            <h2>Enterprise <span>Solutions</span></h2>
-            <p>Tailored relocation programs for organizations of all sizes</p>
-        </div>
-        <div class="tabs-container">
-            <div class="tabs">
-                <button class="tab-btn active" data-tab="hr-integration">HR Integration</button>
-                <button class="tab-btn" data-tab="employee-portal">Employee Portal</button>
-                <button class="tab-btn" data-tab="custom-programs">Custom Programs</button>
-                <button class="tab-btn" data-tab="global-mobility">Global Mobility</button>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane active" id="hr-integration">
-                    <div class="tab-image">
-                        <img src="https://placehold.co/600x400/6DBE45/fff?text=HR+Integration" alt="HR Integration">
-                    </div>
-                    <div class="tab-info">
-                        <h3>Seamless HR System Integration</h3>
-                        <p>Our platform integrates with your existing HR systems, including Workday, ADP, and SAP, creating a unified experience for your team.</p>
-                        <ul class="feature-list">
-                            <li>Single sign-on capabilities</li>
-                            <li>Automated data synchronization</li>
-                            <li>Custom reporting and analytics</li>
-                            <li>Workflow automation</li>
-                        </ul>
-                        <a href="#demo" class="tab-cta">Schedule Integration Demo</a>
-                    </div>
-                </div>
-                <div class="tab-pane" id="employee-portal">
-                    <div class="tab-image">
-                        <img src="https://placehold.co/600x400/6DBE45/fff?text=Employee+Portal" alt="Employee Portal">
-                    </div>
-                    <div class="tab-info">
-                        <h3>Intuitive Employee Portal</h3>
-                        <p>Give your employees a dedicated platform to manage their relocation journey, access resources, and track their benefits.</p>
-                        <ul class="feature-list">
-                            <li>Mobile-friendly interface</li>
-                            <li>Document management</li>
-                            <li>Step-by-step relocation guides</li>
-                            <li>Real-time status updates</li>
-                        </ul>
-                        <a href="#demo" class="tab-cta">View Portal Demo</a>
-                    </div>
-                </div>
-                <div class="tab-pane" id="custom-programs">
-                    <div class="tab-image">
-                        <img src="https://placehold.co/600x400/6DBE45/fff?text=Custom+Programs" alt="Custom Programs">
-                    </div>
-                    <div class="tab-info">
-                        <h3>Tailored Relocation Programs</h3>
-                        <p>Create custom relocation packages that align with your company culture, budget, and specific employee needs.</p>
-                        <ul class="feature-list">
-                            <li>Tiered benefit structures</li>
-                            <li>Role-based customization</li>
-                            <li>Budget optimization tools</li>
-                            <li>White-labeled solutions</li>
-                        </ul>
-                        <a href="#demo" class="tab-cta">Discuss Custom Solutions</a>
-                    </div>
-                </div>
-                <div class="tab-pane" id="global-mobility">
-                    <div class="tab-image">
-                        <img src="https://placehold.co/600x400/6DBE45/fff?text=Global+Mobility" alt="Global Mobility">
-                    </div>
-                    <div class="tab-info">
-                        <h3>Global Mobility Management</h3>
-                        <p>Support for international relocations with comprehensive services that address the complexities of global moves.</p>
-                        <ul class="feature-list">
-                            <li>International housing assistance</li>
-                            <li>Visa and immigration support</li>
-                            <li>Cross-cultural training</li>
-                            <li>Global tax compliance</li>
-                        </ul>
-                        <a href="#demo" class="tab-cta">Explore Global Solutions</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- <EnterpriseSolutions /> -->
 
     <!-- Comparison Section -->
     <section class="comparison-section">
@@ -256,13 +164,12 @@ import Layout from "../layouts/Redesign.astro";
         </div>
         <div class="calculator-container">
             <div class="calculator-tabs">
-                <button class="calc-tab-btn active" data-calc="rebate">Rebate Calculator</button>
-                <button class="calc-tab-btn" data-calc="roi">ROI Calculator</button>
+                <div class="calc-tab-btn" data-calc="rebate">Rebate Calculator</div>
             </div>
             <div class="calculator-content">
                 <!-- Rebate Calculator -->
                 <div class="calculator-pane active" id="rebate-calculator">
-                    <form class="calc-form" id="rebateForm">
+                    <!-- <form class="calc-form" id="rebateForm">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="salePrice">Home Sale Price</label>
@@ -284,87 +191,35 @@ import Layout from "../layouts/Redesign.astro";
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="movingCosts">Estimated Moving Costs</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="movingCosts" placeholder="e.g. 5000" min="0">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="closingCosts">Estimated Closing Costs</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="closingCosts" placeholder="e.g. 8000" min="0">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="additional">Additional Expenses</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="additional" placeholder="e.g. 2000" min="0">
-                                </div>
-                            </div>
+                            
                             <div class="form-group">
                                 <button type="button" id="calculateRebate" class="calc-btn">Calculate</button>
                             </div>
                         </div>
                     </form>
-                    <div class="calc-results" id="rebateResults">
-                        <!-- Results will be displayed here -->
-                    </div>
-                    <button id="toggleRebateTable" class="secondary-btn">View Rebate Table</button>
+                    <div class="calc-results" id="rebateResults"></div> -->
+                    <!-- <button id="toggleRebateTable" class="secondary-btn">View Rebate Table</button>
                     <div class="rebate-table" id="rebateTable">
-                        <!-- Rebate table will be displayed here -->
+                    </div> -->
+                    <div class="slider-wrapper">
+                        <div class="slider-group">
+                            <label for="priceSlider"><strong>Home Sale Price:</strong> $<span id="priceValue">500000</span></label>
+                            <input type="range" id="priceSlider" min="50000" max="2000000" step="10000" value="500000">
+                        </div>
+
+                        <div class="slider-group">
+                            <label for="commissionSlider"><strong>Commission Rate:</strong> <span id="commissionValue">2.5</span>%</label>
+                            <input type="range" id="commissionSlider" min="1" max="3" step="0.1" value="2.5">
+                        </div>
                     </div>
-                </div>
-                
-                <!-- ROI Calculator -->
-                <div class="calculator-pane" id="roi-calculator">
-                    <form class="calc-form" id="roiForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="employeeCount">Number of Relocations (Annual)</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-users"></i>
-                                    <input type="number" id="employeeCount" placeholder="e.g. 25" min="1" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="avgHomeValue">Average Home Value</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-home"></i>
-                                    <input type="number" id="avgHomeValue" placeholder="e.g. 350000" min="50000" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="currentCost">Current Cost Per Relocation</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <input type="number" id="currentCost" placeholder="e.g. 15000" min="0">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="retentionRate">Current Retention Rate (%)</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-percentage"></i>
-                                    <input type="number" id="retentionRate" placeholder="e.g. 85" min="0" max="100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <button type="button" id="calculateROI" class="calc-btn">Calculate ROI</button>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="calc-results" id="roiResults">
-                        <!-- ROI Results will be displayed here -->
+
+                    <div class="results-box" id="sliderResults">
+                        <h4>Rebate Estimate</h4>
+                        <p><strong>Selected Price Range:</strong> $<span id="rangeMin"></span> - $<span id="rangeMax"></span></p>
+                        <p><strong>Commission Rate:</strong> <span id="liveCommissionRate"></span>%</p>
+                        <p><strong>Estimated Rebate (30%):</strong> $<span id="rebateAmount"></span> <em class="small">APPROXIMATE REBATES ARE SUBJECT TO CHANGE</em></p>
                     </div>
                 </div>
             </div>
@@ -372,151 +227,16 @@ import Layout from "../layouts/Redesign.astro";
     </section>
 
     <!-- Case Studies Section -->
-    <section id="case-studies" class="case-studies-section">
-        <div class="section-header">
-            <h2>Success <span>Stories</span></h2>
-            <p>Real results from organizations like yours</p>
-        </div>
-        <div class="case-studies-slider" id="caseStudiesSlider">
-            <div class="case-study-card">
-                <div class="case-study-logo">
-                    <img src="https://placehold.co/200x80/6DBE45/fff?text=TechCorp" alt="TechCorp Logo">
-                </div>
-                <div class="case-study-content">
-                    <h3>TechCorp Saves $1.2M in Relocation Costs</h3>
-                    <p>A leading technology company with 500+ employees implemented our program and saw immediate results.</p>
-                    <ul>
-                        <li>$1.2M in annual savings</li>
-                        <li>15% increase in relocation satisfaction</li>
-                        <li>Reduced HR administrative time by 65%</li>
-                    </ul>
-                    <a href="#" class="case-study-link">Read Full Case Study</a>
-                </div>
-            </div>
-            <div class="case-study-card">
-                <div class="case-study-logo">
-                    <img src="https://placehold.co/200x80/6DBE45/fff?text=HealthPlus" alt="HealthPlus Logo">
-                </div>
-                <div class="case-study-content">
-                    <h3>HealthPlus Improves Talent Acquisition</h3>
-                    <p>A healthcare network with 12 locations used our relocation program to attract top medical talent.</p>
-                    <ul>
-                        <li>Reduced time-to-hire by 22 days</li>
-                        <li>$450K in employee rebates distributed</li>
-                        <li>92% of relocated employees still with company after 2 years</li>
-                    </ul>
-                    <a href="#" class="case-study-link">Read Full Case Study</a>
-                </div>
-            </div>
-            <div class="case-study-card">
-                <div class="case-study-logo">
-                    <img src="https://placehold.co/200x80/6DBE45/fff?text=GlobalFinance" alt="GlobalFinance Logo">
-                </div>
-                <div class="case-study-content">
-                    <h3>GlobalFinance Streamlines International Moves</h3>
-                    <p>A multinational financial services firm implemented our global mobility solution for cross-border relocations.</p>
-                    <ul>
-                        <li>Supported relocations across 14 countries</li>
-                        <li>Reduced relocation timeline by 40%</li>
-                        <li>Improved employee satisfaction scores from 72% to 94%</li>
-                    </ul>
-                    <a href="#" class="case-study-link">Read Full Case Study</a>
-                </div>
-            </div>
-        </div>
-        <div class="slider-controls">
-            <button id="prevCase" class="slider-btn"><i class="fas fa-arrow-left"></i></button>
-            <div class="slider-dots" id="sliderDots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <button id="nextCase" class="slider-btn"><i class="fas fa-arrow-right"></i></button>
-        </div>
-    </section>
+	 <!-- <SuccessStories /> -->
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="section-header">
-            <h2>Client <span>Testimonials</span></h2>
-            <p>Hear from our satisfied partners</p>
-        </div>
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <i class="fas fa-quote-left"></i>
-                    <p>W Relocation transformed our approach to employee moves. The rebate program has been a huge hit with our team, and the integration with our HR systems was seamless.</p>
-                    <div class="testimonial-author">
-                        <img src="https://placehold.co/60x60/6DBE45/fff?text=JD" alt="John Doe">
-                        <div>
-                            <h4>John Doe</h4>
-                            <p>HR Director, TechCorp</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <i class="fas fa-quote-left"></i>
-                    <p>The employee portal has made relocations so much easier to manage. Our employees love the transparency and support they receive throughout the process.</p>
-                    <div class="testimonial-author">
-                        <img src="https://placehold.co/60x60/6DBE45/fff?text=JS" alt="Jane Smith">
-                        <div>
-                            <h4>Jane Smith</h4>
-                            <p>Chief People Officer, HealthPlus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- <Testimonials /> -->
 
-    <!-- Demo Request Section -->
     <section id="demo" class="demo-section">
         <div class="demo-content">
             <h2>Ready to Transform Your Relocation Program?</h2>
             <p>Schedule a personalized demo to see how W Relocation can benefit your organization</p>
-            <form class="demo-form" id="demoForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" placeholder="Company Name" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" placeholder="(123) 456-7890">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="interest">I'm interested in:</label>
-                        <select id="interest">
-                            <option value="general">General Information</option>
-                            <option value="rebate">Rebate Program</option>
-                            <option value="hr">HR Integration</option>
-                            <option value="portal">Employee Portal</option>
-                            <option value="global">Global Mobility</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="message">Additional Information</label>
-                        <textarea id="message" placeholder="Tell us about your relocation needs"></textarea>
-                    </div>
-                </div>
-                <button type="button" id="submitDemo" class="primary-btn">Request Demo</button>
-            </form>
+			<ContactForm />
         </div>
     </section>
 
@@ -549,3 +269,4 @@ import Layout from "../layouts/Redesign.astro";
         </div>
     </section>
 </Layout>
+

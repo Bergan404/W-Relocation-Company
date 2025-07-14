@@ -18,6 +18,10 @@
      box-sizing: border-box;
  }
 
+ html {
+    scroll-behavior: smooth;
+ }
+
  body {
      font-family: 'Poppins', sans-serif;
      color: var(--dark-gray);
@@ -645,11 +649,12 @@
      padding: 15px;
      background: transparent;
      border: none;
-     color: rgba(255, 255, 255, 0.7);
+     color: var(--white);
      font-size: 1rem;
-     font-weight: 500;
-     cursor: pointer;
+     font-weight: 600;
+     /* cursor: pointer; */
      transition: var(--transition);
+     text-align: center;
  }
 
  .calc-tab-btn.active {
@@ -712,7 +717,7 @@
 
  .input-with-icon i {
      position: absolute;
-     left: 15px;
+     left: 5px;
      top: 50%;
      transform: translateY(-50%);
      color: var(--medium-gray);
@@ -1358,3 +1363,32 @@
          padding: 20px;
      }
  }
+
+.slider-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.slider-group {
+    margin-bottom: 1rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #6dbe45;
+}
+
+.results-box {
+    padding: 1rem;
+    background: #f0f9f0;
+    border: 1px solid #cce5cc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.results-box p {
+    margin: 8px 0;
+}
+
+.small {
+    font-size: 10px;
+    font-style: normal;
+}
